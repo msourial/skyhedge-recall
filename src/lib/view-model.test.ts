@@ -77,3 +77,32 @@ it('labels a stale availability-context memory as reference even when its weight
   );
   expect(model?.memories.find((memory) => memory.id === stale.id)?.changed).toContain('not used');
 });
+it('keeps absent accounts explicit and preserves configured account evidence', async () => {
+  const { chainViewModel } = await import('./view-model');
+  expect(chainViewModel({ status: 'not-captured' }).accountConfigured).toBe(false);
+  const read = (value: unknown) => ({
+    fetchedAt: '2026-11-09T00:00:00Z',
+    via: 'tatum' as const,
+    value,
+  });
+  const model = chainViewModel({
+    status: 'captured',
+    reads: {
+      account: read({
+        account: { address: '0xabc', asMoveObject: { contents: { json: { owner: '0xdef' } } } },
+      }),
+      balances: read({ owner: { balance: { totalBalance: '100' } } }),
+      accountTransactions: read({ transactions: { nodes: [{ digest: 'account-tx' }] } }),
+      registryTransactions: {
+        fetchedAt: '2026-11-09T00:00:00Z',
+        via: 'tatum',
+        error: 'OutOfRange',
+      },
+    },
+  });
+  expect(model.accountConfigured).toBe(true);
+  expect(model.accountOwner).toBe('0xdef');
+  expect(model.balances?.owner?.balance?.totalBalance).toBe('100');
+  expect(model.accountTransactions[0].digest).toBe('account-tx');
+  expect(model.errors).toEqual(['registryTransactions: OutOfRange']);
+});

@@ -3,7 +3,7 @@ import snapshotJson from '../../data/snapshot.json';
 import type { LearningWeek } from '../lib/agent/score';
 import { sourceNames, sources } from '../lib/cities';
 import type { Snapshot } from '../lib/snapshot';
-import { percent, viewModel } from '../lib/view-model';
+import { chainViewModel, percent, viewModel } from '../lib/view-model';
 const snapshot = snapshotJson as unknown as Snapshot;
 const mm = (value: number | undefined) => (value === undefined ? '—' : value.toFixed(1));
 const colors = ['#F2C230', '#9CC9E3', '#C5B3DE', '#91C5AE'];
@@ -66,54 +66,85 @@ function LearningChart({ rows, weights = false }: { rows: LearningWeek[]; weight
 }
 function ChainPanel() {
   const chain = snapshot.chain;
-  const reads = chain.reads ?? {};
-  const account = reads.account?.value as
-    { data?: { objectId?: string; type?: string; owner?: unknown } } | undefined;
-  const transactions = reads.transactions?.value as { data?: { digest: string }[] } | undefined;
+  const model = chainViewModel(chain);
+  const objectLink = (id: string) => <a href={`https://suiscan.xyz/mainnet/object/${id}`}>{id}</a>;
+  const count = model.registry?.asMoveObject?.contents?.json?.accounts?.size;
   return (
     <section>
-      <div className="eyebrow">TATUM / SUI MAINNET</div>
+      <div className="eyebrow">TATUM / SUI MAINNET GRAPHQL</div>
       <h2>Chain evidence</h2>
       <p>
         {chain.status} · {chain.fetchedAt ?? 'No capture timestamp'}
       </p>
-      {chain.message && (
-        <p>
-          {chain.message}. Set server-side credentials in .env.local and run the agent to capture
-          read-only chain evidence.
-        </p>
-      )}
+      {chain.message && <p>{chain.message}</p>}
       <dl>
         <dt>Checkpoint</dt>
-        <dd>{String(reads.checkpoint?.value ?? 'Not captured')}</dd>
+        <dd>
+          {model.network?.checkpoint?.sequenceNumber ?? 'Not captured'} ·{' '}
+          {model.network?.checkpoint?.timestamp ?? 'No checkpoint timestamp'}
+        </dd>
         <dt>Chain identifier</dt>
-        <dd>{String(reads.chainIdentifier?.value ?? 'Not captured')}</dd>
-        <dt>MemWal account type</dt>
-        <dd>{account?.data?.type ?? 'Not captured'}</dd>
-        <dt>Account owner</dt>
-        <dd>{account?.data?.owner ? JSON.stringify(account.data.owner) : 'Not captured'}</dd>
-        {['delegateBalance', 'ownerBalance'].map((name) => {
-          const balance = reads[name]?.value as { totalBalance?: string } | undefined;
-          return (
-            <div key={name}>
-              <dt>{name === 'delegateBalance' ? 'Delegate' : 'Owner'} SUI balance</dt>
-              <dd>
-                {balance?.totalBalance
-                  ? `${Number(balance.totalBalance) / 1e9} SUI`
-                  : 'Not captured'}
-              </dd>
-            </div>
-          );
-        })}
+        <dd>{model.network?.chainIdentifier ?? 'Not captured'}</dd>
+        <dt>Epoch</dt>
+        <dd>{model.network?.epoch?.epochId ?? 'Not captured'}</dd>
+        <dt>Reference gas price (MIST)</dt>
+        <dd>{model.network?.epoch?.referenceGasPrice ?? 'Not captured'}</dd>
+        <dt>Walrus Memory package</dt>
+        <dd>{model.pkg ? objectLink(model.pkg.address) : 'Not captured'}</dd>
+        <dt>Modules</dt>
+        <dd>
+          {model.pkg?.asMovePackage?.modules?.nodes.map((node) => node.name).join(', ') ??
+            'Not captured'}
+        </dd>
+        <dt>AccountRegistry type</dt>
+        <dd>{model.registry?.asMoveObject?.contents?.type?.repr ?? 'Not captured'}</dd>
+        <dt>AccountRegistry object</dt>
+        <dd>{model.registry ? objectLink(model.registry.address) : 'Not captured'}</dd>
       </dl>
-      {account?.data?.objectId && (
-        <a href={`https://suiscan.xyz/mainnet/object/${account.data.objectId}`}>
-          Inspect account object
-        </a>
+      {count !== undefined && (
+        <p>
+          Walrus Memory AccountRegistry on Sui mainnet: {BigInt(count).toLocaleString('en-US')}{' '}
+          accounts (read via Tatum at {model.registryTime})
+        </p>
       )}
-      {transactions?.data?.length ? (
+      <p>
+        Our MemWal account:{' '}
+        {model.account
+          ? objectLink(model.account.address)
+          : model.accountConfigured
+            ? 'Configured; read unavailable'
+            : 'not configured yet'}
+      </p>
+      {model.account && <p>Account owner: {model.accountOwner ?? 'See account object'}</p>}
+      {(['owner', 'delegate'] as const).map(
+        (name) =>
+          model.balances?.[name]?.balance && (
+            <p key={name}>
+              {name} balance: {model.balances[name]!.balance!.totalBalance} MIST
+            </p>
+          ),
+      )}
+      {model.account && (
+        <>
+          <p>Account type: {model.account.asMoveObject?.contents?.type?.repr ?? 'Not captured'}</p>
+          <h3>Recent account transactions</h3>
+          {model.accountTransactions.length ? (
+            <ul>
+              {model.accountTransactions.map((tx) => (
+                <li key={tx.digest}>
+                  <a href={`https://suiscan.xyz/mainnet/tx/${tx.digest}`}>{tx.digest}</a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No recent account transaction digests captured.</p>
+          )}
+        </>
+      )}
+      <h3>Recent registry transactions</h3>
+      {model.transactions.length ? (
         <ul>
-          {transactions.data.map((tx) => (
+          {model.transactions.map((tx) => (
             <li key={tx.digest}>
               <a href={`https://suiscan.xyz/mainnet/tx/${tx.digest}`}>{tx.digest}</a>
             </li>
@@ -122,6 +153,9 @@ function ChainPanel() {
       ) : (
         <p>No recent transaction digests captured.</p>
       )}
+      {model.errors.map((error) => (
+        <p key={error}>{error}</p>
+      ))}
     </section>
   );
 }
@@ -427,7 +461,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
           <a href={city.provenance.historical}>Open-Meteo historical forecasts</a> ·{' '}
           <a href={city.provenance.forward}>Forward forecasts</a> ·{' '}
           <a href="https://memory.walrus.xyz">Walrus Memory dashboard</a> ·{' '}
-          <a href="https://docs.tatum.io/reference/rpc-sui">Tatum Sui RPC</a>
+          <a href="https://sui-mainnet.gateway.tatum.io/_methods">Tatum Sui GraphQL</a>
         </p>
         <p>
           Credibility uses exp(−(MAE − minimum MAE) / 2 mm). Small samples, stitched historical

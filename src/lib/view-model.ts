@@ -1,3 +1,4 @@
+import { accountOwnerAddress } from './tatum';
 import { demoProfile, type Memory } from './memory';
 import type { Snapshot } from './snapshot';
 /** Display percent for a probability in 0..1; unavailable values stay explicit. */
@@ -91,5 +92,44 @@ export function viewModel(snapshot: Snapshot, requestedCity?: string) {
           changed: memoryEffect(memory, activeCredibility || profile.includes(memory)),
         };
       }),
+  };
+}
+
+/** Shape captured GraphQL evidence for the chain panel without substituting sample values. */
+export function chainViewModel(chain: import('./tatum').ChainSnapshot) {
+  const reads = chain.reads ?? {};
+  const network = reads.network?.value as
+    | {
+        chainIdentifier?: string;
+        checkpoint?: { sequenceNumber: string | number; timestamp: string };
+        epoch?: { epochId: string | number; referenceGasPrice: string };
+      }
+    | undefined;
+  const walrus = reads.walrus?.value as
+    { registry?: import('./tatum').ChainObject; pkg?: import('./tatum').ChainObject } | undefined;
+  const account = reads.account?.value as { account?: import('./tatum').ChainObject } | undefined;
+  const accountTransactions = reads.accountTransactions?.value as
+    { transactions?: { nodes: { digest: string }[] } } | undefined;
+  const transactions = reads.registryTransactions?.value as
+    { transactions?: { nodes: { digest: string }[] } } | undefined;
+  return {
+    network,
+    registry: walrus?.registry,
+    pkg: walrus?.pkg,
+    account: account?.account,
+    accountOwner: account?.account ? accountOwnerAddress(account.account) : null,
+    accountTransactions: accountTransactions?.transactions?.nodes ?? [],
+    balances: reads.balances?.value as
+      | {
+          owner?: { balance?: { totalBalance: string } };
+          delegate?: { balance?: { totalBalance: string } };
+        }
+      | undefined,
+    accountConfigured: Boolean(reads.account),
+    registryTime: reads.walrus?.fetchedAt,
+    transactions: transactions?.transactions?.nodes ?? [],
+    errors: Object.entries(reads).flatMap(([name, read]) =>
+      read.error ? [`${name}: ${read.error}`] : [],
+    ),
   };
 }

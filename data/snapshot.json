@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T15:54:56.166Z",
+  "generatedAt": "2026-11-09T16:09:55.647Z",
   "mode": "dry-run",
   "cities": [
     {
@@ -160,7 +160,7 @@
         "longitude": -73.9692,
         "timezone": "America/New_York"
       },
-      "fetchedAt": "2026-11-09T15:54:57.246Z",
+      "fetchedAt": "2026-11-09T16:09:57.088Z",
       "provenance": {
         "observed": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094728&startDate=2026-08-03&endDate=2026-11-08&dataTypes=PRCP&units=metric&format=json",
         "historical": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=40.7789&longitude=-73.9692&start_date=2026-08-03&end_date=2026-11-08&daily=precipitation_sum&timezone=America%2FNew_York&models=gfs_seamless%2Cecmwf_ifs025%2Cicon_seamless%2Cgem_seamless",
@@ -643,7 +643,7 @@
         "longitude": -87.9336,
         "timezone": "America/Chicago"
       },
-      "fetchedAt": "2026-11-09T15:54:57.602Z",
+      "fetchedAt": "2026-11-09T16:09:57.624Z",
       "provenance": {
         "observed": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094846&startDate=2026-08-03&endDate=2026-11-08&dataTypes=PRCP&units=metric&format=json",
         "historical": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=41.995&longitude=-87.9336&start_date=2026-08-03&end_date=2026-11-08&daily=precipitation_sum&timezone=America%2FChicago&models=gfs_seamless%2Cecmwf_ifs025%2Cicon_seamless%2Cgem_seamless",
@@ -1126,7 +1126,7 @@
         "longitude": -122.3139,
         "timezone": "America/Los_Angeles"
       },
-      "fetchedAt": "2026-11-09T15:54:57.974Z",
+      "fetchedAt": "2026-11-09T16:09:58.107Z",
       "provenance": {
         "observed": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00024233&startDate=2026-08-03&endDate=2026-11-08&dataTypes=PRCP&units=metric&format=json",
         "historical": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=47.4444&longitude=-122.3139&start_date=2026-08-03&end_date=2026-11-08&daily=precipitation_sum&timezone=America%2FLos_Angeles&models=gfs_seamless%2Cecmwf_ifs025%2Cicon_seamless%2Cgem_seamless",
@@ -2578,7 +2578,155 @@
     "recalled": []
   },
   "chain": {
-    "status": "not-captured",
-    "message": "Not captured yet (run agent with TATUM_API_KEY)"
+    "status": "captured",
+    "fetchedAt": "2026-11-09T16:09:59.561Z",
+    "via": "tatum",
+    "reads": {
+      "network": {
+        "fetchedAt": "2026-11-09T16:09:58.650Z",
+        "via": "tatum",
+        "value": {
+          "chainIdentifier": "4btiuiMPvEENsttpZC7CZ53DruC3MAgfznDbASZ7DR6S",
+          "checkpoint": {
+            "sequenceNumber": 343412962,
+            "digest": "31XfeC9gZNtWCeYJPNJncbqLRsVuc6uSbq2xkTGZjo6Q",
+            "timestamp": "2026-11-09T16:09:57.225Z"
+          },
+          "epoch": {
+            "epochId": 1306,
+            "referenceGasPrice": "100"
+          }
+        }
+      },
+      "walrus": {
+        "fetchedAt": "2026-11-09T16:09:59.063Z",
+        "via": "tatum",
+        "value": {
+          "registry": {
+            "address": "0x8bf82c9e09e36b8d1c38298f68b7cb68e7b8762887e7592add9986d5e9cf199f",
+            "version": 1074813397,
+            "digest": "5qUCn46paVeTrdgYKrD1VgzqoW1U6jnTWbGdW7oKWF6p",
+            "owner": {
+              "__typename": "Shared"
+            },
+            "previousTransaction": {
+              "digest": "2Q77YtDxdj7wBGdsenBJ3dnQWkKufLXcR7LwbgYjt3Bk",
+              "effects": {
+                "timestamp": "2026-11-09T15:57:49.669Z"
+              }
+            },
+            "asMoveObject": {
+              "contents": {
+                "type": {
+                  "repr": "0xe7c16fbea0560e7057e2bf7422feaa4fb313749fc69c9e9092fac7a33b81d7f5::account::AccountRegistry"
+                },
+                "json": {
+                  "id": "0x8bf82c9e09e36b8d1c38298f68b7cb68e7b8762887e7592add9986d5e9cf199f",
+                  "accounts": {
+                    "id": "0xcfe04623a8c72ede45fc02babcb9711625df8549e53d3107d507efa696d5efde",
+                    "size": "11507"
+                  },
+                  "migration_finalized": true,
+                  "pinned_allowlist_root": "UBpDwd+dcMOY5C94yhRSUgdIl9OBUd+UD7emwloUIfE=",
+                  "expected_account_imports": "4420",
+                  "expected_delegate_imports": "4887",
+                  "imported_accounts": "4420",
+                  "imported_delegates": "4887",
+                  "version": "4"
+                }
+              }
+            }
+          },
+          "pkg": {
+            "address": "0xe7c16fbea0560e7057e2bf7422feaa4fb313749fc69c9e9092fac7a33b81d7f5",
+            "version": 1,
+            "asMovePackage": {
+              "modules": {
+                "nodes": [
+                  {
+                    "name": "account"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "registryTransactions": {
+        "fetchedAt": "2026-11-09T16:09:59.561Z",
+        "via": "tatum",
+        "value": {
+          "transactions": {
+            "nodes": [
+              {
+                "digest": "3BePpViV3pYoDaxMemQ9PxHVqbijaZMXyAimf2mWGNRj",
+                "sender": {
+                  "address": "0x507eca7a16dc139683bb23c4ad18387132d958b54b5a43c76caac0e2958e7fca"
+                },
+                "effects": {
+                  "status": "SUCCESS",
+                  "timestamp": "2026-11-09T14:29:47.435Z",
+                  "checkpoint": {
+                    "sequenceNumber": 343388103
+                  }
+                }
+              },
+              {
+                "digest": "CPWRfxL6ZCCAFBcbg9kPqxxWXxY8Yu76bysKqV5FHe5V",
+                "sender": {
+                  "address": "0xb91067d2e948d557b4f0a0ed6d8797a659f8d886f7d87f0370782518914fb10b"
+                },
+                "effects": {
+                  "status": "SUCCESS",
+                  "timestamp": "2026-11-09T15:01:44.877Z",
+                  "checkpoint": {
+                    "sequenceNumber": 343396062
+                  }
+                }
+              },
+              {
+                "digest": "45cQpdeGUeLgaUCKffKbw5Q2iSodzsBkGPZo9xyuFCW5",
+                "sender": {
+                  "address": "0x02f59f637a9a1eb6b06fb7d07eb3aa6ec370d6540b348536a13e764c39987696"
+                },
+                "effects": {
+                  "status": "SUCCESS",
+                  "timestamp": "2026-11-09T15:33:48.584Z",
+                  "checkpoint": {
+                    "sequenceNumber": 343404032
+                  }
+                }
+              },
+              {
+                "digest": "BgV89J5qHbSLusCrcYXatxaDeJCpUBygWdBoDbFusJFX",
+                "sender": {
+                  "address": "0xaff0ccba609e3d18b5f5cf6290f158736c6c788ed4074951d636b223a4824b4d"
+                },
+                "effects": {
+                  "status": "SUCCESS",
+                  "timestamp": "2026-11-09T15:37:54.460Z",
+                  "checkpoint": {
+                    "sequenceNumber": 343405055
+                  }
+                }
+              },
+              {
+                "digest": "2Q77YtDxdj7wBGdsenBJ3dnQWkKufLXcR7LwbgYjt3Bk",
+                "sender": {
+                  "address": "0xe2d826f672d52b8ac1c8cdbe8c618ca05d42601147a565202833d97857c72b11"
+                },
+                "effects": {
+                  "status": "SUCCESS",
+                  "timestamp": "2026-11-09T15:57:49.669Z",
+                  "checkpoint": {
+                    "sequenceNumber": 343409973
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
   }
 }

@@ -16,7 +16,7 @@ Open-Meteo mm ────┘                                      │
 Upcoming model mm ─ residual probabilities ─ equal / recalled weights
                                                              │
 Demo profile memory ─ recalled city / trigger / recommendation │
-Tatum Sui RPC ─ checkpoint / account / balances / transactions │
+Tatum Sui GraphQL ─ checkpoint / account / balances / transactions │
                                                              v
                                                data/snapshot.json
                                                        │
@@ -59,19 +59,11 @@ Recalled credibility must match the city, training window, training hash and com
 
 `data/memory-ledger.json` stores per-id text hashes, accepted job ids, status and returned blob ids. Accepted jobs are persisted before polling. A restart resumes the same job; completed ids are skipped. A changed payload under an existing id fails explicitly. Writes use SDK idempotency keys and deduplication. Transient network errors, HTTP 429 and server errors get bounded exponential backoff plus jitter. Recall retries bounded waits for search-index lag. The installed SDK exposes `rememberBulkAsync` and `waitForRememberJobs`; this implementation keeps serial per-id jobs for simple durable recovery.
 
-## Tatum Sui RPC
+## Tatum Sui GraphQL
 
-The server posts JSON-RPC to `https://sui-mainnet.gateway.tatum.io` with the `x-api-key` header. Calls are serialized at at most two starts per second, retried on transient failures and cached per method/params for sixty seconds.
+The server posts one GraphQL operation per request to `https://sui-mainnet.gateway.tatum.io/graphql` with `x-api-key` and body `{query, variables}`. Requests are serialized with at least 500 ms between starts, cached by query and variables for 60 seconds, and retried on HTTP 429/5xx. GraphQL errors are recorded per read; optional transaction errors leave successful evidence visible.
 
-| Method                                  | Evidence                                     |
-| --------------------------------------- | -------------------------------------------- |
-| `sui_getLatestCheckpointSequenceNumber` | Latest checkpoint                            |
-| `sui_getChainIdentifier`                | Chain identifier                             |
-| `sui_getObject`                         | MemWal account type, contents and owner      |
-| `suix_getBalance`                       | Delegate and address-owner SUI balance       |
-| `suix_queryTransactionBlocks`           | Recent transactions using the account object |
-
-Each saved read carries `via: tatum` and a fetched timestamp. Raw balances use MIST; UI converts to SUI. Missing keys leave an honest uncaptured panel. Partial failures preserve completed reads. No chain write is performed by this client.
+Each agent run fetches `https://relayer.memory.walrus.xyz/config` for the mainnet package and registry. If unavailable, the documented deployment observed on 2026-11-09 in `FALLBACK_DEPLOYMENT` is used with a visible warning. Three operations normally capture network/checkpoint/epoch, registry/package/modules, and recent registry transactions. Transactions use a checkpoint window to avoid unbounded history errors. Configured MemWal accounts add object, combined owner/delegate balances (raw MIST), and bounded account transaction reads. No chain writes occur. Every Tatum read includes its capture time; missing account credentials remain explicit.
 
 ## Setup and commands
 

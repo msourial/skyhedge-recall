@@ -1,4 +1,6 @@
-# Implementation readiness
+# Implementation readiness (historical, superseded)
+
+This records the earlier agent-only chunk. Current scope and review are in `implementation_readiness_report.md` and `consolidated_review_report.md`; the earlier inverse-MAE policy has been replaced by exponential credibility.
 
 Source: docs/SPEC.md. Scope: data agent, memory and chain adapters, default Next.js shell, API reads, and unit tests. No remote writes are authorized in this chunk.
 

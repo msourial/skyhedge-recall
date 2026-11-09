@@ -1,8 +1,157 @@
 {
-  "generatedAt": "2026-11-09T15:25:32.581Z",
+  "generatedAt": "2026-11-09T15:54:56.166Z",
   "mode": "dry-run",
   "cities": [
     {
+      "learning": [
+        {
+          "week": "2026-W37",
+          "trainingWeeks": ["2026-W35", "2026-W36"],
+          "weights": {
+            "gfs_seamless": 0.4982777406858437,
+            "ecmwf_ifs025": 0.0034423612086367647,
+            "icon_seamless": 0.4982777406858446,
+            "gem_seamless": 0.0000021574196751559614
+          },
+          "memoryOn": 0.2508605903021592,
+          "memoryOff": 0.3125,
+          "observed": true,
+          "brierOn": 0.5612098551624293,
+          "brierOff": 0.47265625
+        },
+        {
+          "week": "2026-W38",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37"],
+          "weights": {
+            "gfs_seamless": 0.10512454240522494,
+            "ecmwf_ifs025": 0.007064948773874713,
+            "icon_seamless": 0.8875626396564132,
+            "gem_seamless": 0.00024786916448695163
+          },
+          "memoryOn": 0.39853743641232775,
+          "memoryOff": 0.3,
+          "observed": false,
+          "brierOn": 0.15883208822211017,
+          "brierOff": 0.09
+        },
+        {
+          "week": "2026-W39",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38"],
+          "weights": {
+            "gfs_seamless": 0.4014338239559453,
+            "ecmwf_ifs025": 0.039747331142402406,
+            "icon_seamless": 0.5555967146882712,
+            "gem_seamless": 0.003222130213381122
+          },
+          "memoryOn": 0.8327963116311032,
+          "memoryOff": 0.7916666666666666,
+          "observed": true,
+          "brierOn": 0.027957073404163143,
+          "brierOff": 0.04340277777777779
+        },
+        {
+          "week": "2026-W40",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38", "2026-W39"],
+          "weights": {
+            "gfs_seamless": 0.12324800090852892,
+            "ecmwf_ifs025": 0.05763895222100589,
+            "icon_seamless": 0.8077063732093854,
+            "gem_seamless": 0.011406673661079666
+          },
+          "memoryOn": 0.19730723948380952,
+          "memoryOff": 0.2857142857142857,
+          "observed": false,
+          "brierOn": 0.03893014675272136,
+          "brierOff": 0.08163265306122448
+        },
+        {
+          "week": "2026-W41",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38", "2026-W39", "2026-W40"],
+          "weights": {
+            "gfs_seamless": 0.1439822217923349,
+            "ecmwf_ifs025": 0.07454153589719194,
+            "icon_seamless": 0.7623124407240882,
+            "gem_seamless": 0.019163801586384917
+          },
+          "memoryOn": 0.38684155736199777,
+          "memoryOff": 0.65625,
+          "observed": true,
+          "brierOn": 0.3759632757782603,
+          "brierOff": 0.1181640625
+        },
+        {
+          "week": "2026-W42",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41"
+          ],
+          "weights": {
+            "gfs_seamless": 0.18930153780650083,
+            "ecmwf_ifs025": 0.32810746169005695,
+            "icon_seamless": 0.39506703823214584,
+            "gem_seamless": 0.08752396227129634
+          },
+          "memoryOn": 0.15500744869246064,
+          "memoryOff": 0.1388888888888889,
+          "observed": false,
+          "brierOn": 0.024027309150145816,
+          "brierOff": 0.019290123456790126
+        },
+        {
+          "week": "2026-W43",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42"
+          ],
+          "weights": {
+            "gfs_seamless": 0.24532870020138706,
+            "ecmwf_ifs025": 0.24077164299071455,
+            "icon_seamless": 0.3994541318945008,
+            "gem_seamless": 0.11444552491339753
+          },
+          "memoryOn": 0.13994541318945009,
+          "memoryOff": 0.125,
+          "observed": false,
+          "brierOn": 0.01958471867276591,
+          "brierOff": 0.015625
+        },
+        {
+          "week": "2026-W44",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43"
+          ],
+          "weights": {
+            "gfs_seamless": 0.24791713788398972,
+            "ecmwf_ifs025": 0.24381942802206205,
+            "icon_seamless": 0.3823849800262431,
+            "gem_seamless": 0.12587845406770518
+          },
+          "memoryOn": 0.12567136182056757,
+          "memoryOff": 0.11363636363636365,
+          "observed": false,
+          "brierOn": 0.01579329118183601,
+          "brierOff": 0.01291322314049587
+        }
+      ],
       "city": {
         "id": "nyc",
         "name": "New York",
@@ -11,7 +160,7 @@
         "longitude": -73.9692,
         "timezone": "America/New_York"
       },
-      "fetchedAt": "2026-11-09T15:25:34.515Z",
+      "fetchedAt": "2026-11-09T15:54:57.246Z",
       "provenance": {
         "observed": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094728&startDate=2026-08-03&endDate=2026-11-08&dataTypes=PRCP&units=metric&format=json",
         "historical": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=40.7789&longitude=-73.9692&start_date=2026-08-03&end_date=2026-11-08&daily=precipitation_sum&timezone=America%2FNew_York&models=gfs_seamless%2Cecmwf_ifs025%2Cicon_seamless%2Cgem_seamless",
@@ -192,16 +341,21 @@
           "hitRate": 0.8333333333333334,
           "wins": 4,
           "residuals": [
-            5.300000000000001,
-            14.8,
-            21.099999999999998,
-            -0.20000000000000107,
-            22.60000000000001,
-            3.6999999999999993,
-            20.1,
-            4.3999999999999995,
-            0,
-            0
+            5.300000000000001, 14.8, 21.099999999999998, -0.20000000000000107, 22.60000000000001,
+            3.6999999999999993, 20.1, 4.3999999999999995, 0, 0
+          ],
+          "comparisonMae": 9.220000000000002,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -211,16 +365,21 @@
           "hitRate": 0.8333333333333334,
           "wins": 2,
           "residuals": [
-            4.600000000000001,
-            -35.4,
-            -17.4,
-            -2.5000000000000018,
-            -11.700000000000003,
-            -4,
-            -4.5,
-            -12.400000000000002,
-            0,
-            -0.4
+            4.600000000000001, -35.4, -17.4, -2.5000000000000018, -11.700000000000003, -4, -4.5,
+            -12.400000000000002, 0, -0.4
+          ],
+          "comparisonMae": 9.290000000000001,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -230,16 +389,21 @@
           "hitRate": 0.8333333333333334,
           "wins": 5,
           "residuals": [
-            2.0999999999999996,
-            -17.999999999999993,
-            8.299999999999997,
-            -10.4,
-            6.399999999999999,
-            2.4999999999999982,
-            29.800000000000004,
-            -6.8999999999999995,
-            0,
-            0
+            2.0999999999999996, -17.999999999999993, 8.299999999999997, -10.4, 6.399999999999999,
+            2.4999999999999982, 29.800000000000004, -6.8999999999999995, 0, 0
+          ],
+          "comparisonMae": 8.440000000000001,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -249,24 +413,29 @@
           "hitRate": 0.8666666666666667,
           "wins": 4,
           "residuals": [
-            -60.5,
-            -9,
-            -8.000000000000007,
-            2.5,
-            7.800000000000004,
-            -4.100000000000001,
-            6.700000000000003,
-            -5.8,
-            0,
-            0
+            -60.5, -9, -8.000000000000007, 2.5, 7.800000000000004, -4.100000000000001,
+            6.700000000000003, -5.8, 0, 0
+          ],
+          "comparisonMae": 10.440000000000001,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         }
       ],
       "weights": {
-        "gfs_seamless": 0.251941140928699,
-        "ecmwf_ifs025": 0.2502272556162589,
-        "icon_seamless": 0.27275831147153645,
-        "gem_seamless": 0.22507329198350565
+        "gfs_seamless": 0.25088203354103494,
+        "ecmwf_ifs025": 0.242253050428936,
+        "icon_seamless": 0.3705479450703298,
+        "gem_seamless": 0.13631697095969922
       },
       "credibilityMode": "computed-local",
       "probabilities": [
@@ -279,8 +448,8 @@
             "gem_seamless": 0.8333333333333334
           },
           "naive": 0.6875,
-          "weighted": 0.6875102579998857,
-          "delta": 0.000010257999885743274
+          "weighted": 0.6927381358424622,
+          "delta": 0.005238135842462244
         },
         {
           "threshold": 25,
@@ -291,8 +460,8 @@
             "gem_seamless": 0.5
           },
           "naive": 0.5416666666666666,
-          "weighted": 0.5461738374587728,
-          "delta": 0.004507170792106163
+          "weighted": 0.5653534004750961,
+          "delta": 0.02368673380842945
         },
         {
           "threshold": 50,
@@ -303,20 +472,169 @@
             "gem_seamless": 0.08333333333333333
           },
           "naive": 0.10416666666666666,
-          "weighted": 0.10606319262262803,
-          "delta": 0.0018965259559613756
+          "weighted": 0.1142123287558608,
+          "delta": 0.010045662089194149
         }
       ],
       "explanations": [
-        "Trusting GFS (NOAA) 25.2% in New York: it tied or beat available sources in 4 of 10 backfill weeks (MAE 9.22 mm).",
-        "Trusting ECMWF IFS 25.0% in New York: it tied or beat available sources in 2 of 10 backfill weeks (MAE 9.29 mm).",
-        "Trusting DWD ICON 27.3% in New York: it tied or beat available sources in 5 of 10 backfill weeks (MAE 8.44 mm).",
-        "Trusting ECCC GEM 22.5% in New York: it tied or beat available sources in 4 of 10 backfill weeks (MAE 10.44 mm)."
+        "Trusting DWD ICON 37% in New York: it was closest (including ties) in 5 of the last 10 backfill weeks (MAE 8.4 mm vs 9.2–10.4 mm for the others).",
+        "Trusting GFS (NOAA) 25% in New York: it was closest (including ties) in 4 of the last 10 backfill weeks (MAE 9.2 mm vs 8.4–10.4 mm for the others).",
+        "Trusting ECMWF IFS 24% in New York: it was closest (including ties) in 2 of the last 10 backfill weeks (MAE 9.3 mm vs 8.4–10.4 mm for the others).",
+        "Trusting ECCC GEM 14% in New York: it was closest (including ties) in 4 of the last 10 backfill weeks (MAE 10.4 mm vs 8.4–9.3 mm for the others)."
       ],
-      "trainingHash": "e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd",
+      "trainingHash": "bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872",
       "warnings": []
     },
     {
+      "learning": [
+        {
+          "week": "2026-W37",
+          "trainingWeeks": ["2026-W35", "2026-W36"],
+          "weights": {
+            "gfs_seamless": 1.9151011771208074e-8,
+            "ecmwf_ifs025": 0.05388461441236612,
+            "icon_seamless": 0.8428971874740642,
+            "gem_seamless": 0.10321817896255797
+          },
+          "memoryOn": 0.25,
+          "memoryOff": 0.25,
+          "observed": false,
+          "brierOn": 0.0625,
+          "brierOff": 0.0625
+        },
+        {
+          "week": "2026-W38",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37"],
+          "weights": {
+            "gfs_seamless": 0.000007632123770682018,
+            "ecmwf_ifs025": 0.0282552007793238,
+            "icon_seamless": 0.7920391895655274,
+            "gem_seamless": 0.179697977531378
+          },
+          "memoryOn": 0.7999999999999999,
+          "memoryOff": 0.8,
+          "observed": true,
+          "brierOn": 0.04000000000000003,
+          "brierOff": 0.03999999999999998
+        },
+        {
+          "week": "2026-W39",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38"],
+          "weights": {
+            "gfs_seamless": 6.007605827906594e-15,
+            "ecmwf_ifs025": 0.0005485401449642363,
+            "icon_seamless": 0.007667611727813156,
+            "gem_seamless": 0.9917838481272166
+          },
+          "memoryOn": 0.16666666666666666,
+          "memoryOff": 0.16666666666666666,
+          "observed": false,
+          "brierOn": 0.027777777777777776,
+          "brierOff": 0.027777777777777776
+        },
+        {
+          "week": "2026-W40",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38", "2026-W39"],
+          "weights": {
+            "gfs_seamless": 4.157180364300892e-12,
+            "ecmwf_ifs025": 0.0012989694385097986,
+            "icon_seamless": 0.014754840677558513,
+            "gem_seamless": 0.9839461898797746
+          },
+          "memoryOn": 0.2925944900509313,
+          "memoryOff": 0.5714285714285714,
+          "observed": true,
+          "brierOn": 0.500422555506302,
+          "brierOff": 0.18367346938775514
+        },
+        {
+          "week": "2026-W41",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38", "2026-W39", "2026-W40"],
+          "weights": {
+            "gfs_seamless": 4.874622001538532e-10,
+            "ecmwf_ifs025": 0.025345813767048524,
+            "icon_seamless": 0.1353161075888309,
+            "gem_seamless": 0.8393380781566584
+          },
+          "memoryOn": 0.2299172597695823,
+          "memoryOff": 0.15625,
+          "observed": false,
+          "brierOn": 0.052861946339953586,
+          "brierOff": 0.0244140625
+        },
+        {
+          "week": "2026-W42",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41"
+          ],
+          "weights": {
+            "gfs_seamless": 9.287253900246972e-9,
+            "ecmwf_ifs025": 0.03954416181655455,
+            "icon_seamless": 0.16619010663327624,
+            "gem_seamless": 0.7942657222629153
+          },
+          "memoryOn": 0.2920084017366265,
+          "memoryOff": 0.2222222222222222,
+          "observed": true,
+          "brierOn": 0.5012521032115261,
+          "brierOff": 0.6049382716049383
+        },
+        {
+          "week": "2026-W43",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42"
+          ],
+          "weights": {
+            "gfs_seamless": 3.140126113993596e-8,
+            "ecmwf_ifs025": 0.06586370281173101,
+            "icon_seamless": 0.16609958163056623,
+            "gem_seamless": 0.7680366841564417
+          },
+          "memoryOn": 0.1768036684156442,
+          "memoryOff": 0.125,
+          "observed": false,
+          "brierOn": 0.031259537165229064,
+          "brierOff": 0.015625
+        },
+        {
+          "week": "2026-W44",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43"
+          ],
+          "weights": {
+            "gfs_seamless": 1.9773600683609353e-7,
+            "ecmwf_ifs025": 0.08229506753803635,
+            "icon_seamless": 0.1872666234826074,
+            "gem_seamless": 0.7304381112433493
+          },
+          "memoryOn": 0.15731255556757723,
+          "memoryOff": 0.11363636363636363,
+          "observed": false,
+          "brierOn": 0.024747240139202074,
+          "brierOff": 0.012913223140495866
+        }
+      ],
       "city": {
         "id": "chicago",
         "name": "Chicago",
@@ -325,7 +643,7 @@
         "longitude": -87.9336,
         "timezone": "America/Chicago"
       },
-      "fetchedAt": "2026-11-09T15:25:35.181Z",
+      "fetchedAt": "2026-11-09T15:54:57.602Z",
       "provenance": {
         "observed": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094846&startDate=2026-08-03&endDate=2026-11-08&dataTypes=PRCP&units=metric&format=json",
         "historical": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=41.995&longitude=-87.9336&start_date=2026-08-03&end_date=2026-11-08&daily=precipitation_sum&timezone=America%2FChicago&models=gfs_seamless%2Cecmwf_ifs025%2Cicon_seamless%2Cgem_seamless",
@@ -506,16 +824,21 @@
           "hitRate": 0.7666666666666667,
           "wins": 3,
           "residuals": [
-            -57.699999999999996,
-            16.1,
-            0.8999999999999999,
-            -202.5,
-            0,
-            23.89999999999999,
-            -0.7,
-            21.6,
-            0,
-            3.2
+            -57.699999999999996, 16.1, 0.8999999999999999, -202.5, 0, 23.89999999999999, -0.7, 21.6,
+            0, 3.2
+          ],
+          "comparisonMae": 32.66,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -525,16 +848,21 @@
           "hitRate": 0.9333333333333333,
           "wins": 4,
           "residuals": [
-            -5.699999999999999,
-            -8.700000000000003,
-            -11,
-            -49.89999999999999,
-            -6.3,
-            -6.300000000000004,
-            -0.2,
-            2.400000000000002,
-            0,
-            2.6
+            -5.699999999999999, -8.700000000000003, -11, -49.89999999999999, -6.3,
+            -6.300000000000004, -0.2, 2.400000000000002, 0, 2.6
+          ],
+          "comparisonMae": 9.31,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -544,16 +872,21 @@
           "hitRate": 0.9666666666666667,
           "wins": 4,
           "residuals": [
-            -2.7000000000000006,
-            -0.6999999999999993,
-            -2,
-            -48.8,
-            -3.1,
-            -10.5,
-            -0.2,
-            7.699999999999999,
-            0,
-            -0.2999999999999998
+            -2.7000000000000006, -0.6999999999999993, -2, -48.8, -3.1, -10.5, -0.2,
+            7.699999999999999, 0, -0.2999999999999998
+          ],
+          "comparisonMae": 7.6,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -563,24 +896,29 @@
           "hitRate": 0.8666666666666667,
           "wins": 5,
           "residuals": [
-            -6.700000000000001,
-            5.1,
-            -2.5,
-            -1,
-            0,
-            30.599999999999994,
-            -0.2,
-            5.100000000000001,
-            0,
+            -6.700000000000001, 5.1, -2.5, -1, 0, 30.599999999999994, -0.2, 5.100000000000001, 0,
             -0.19999999999999973
+          ],
+          "comparisonMae": 5.14,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         }
       ],
       "weights": {
-        "gfs_seamless": 0.07320199622532488,
-        "ecmwf_ifs025": 0.23898925246793742,
-        "icon_seamless": 0.286509208481911,
-        "gem_seamless": 0.4012995428248266
+        "gfs_seamless": 7.462089611005953e-7,
+        "ecmwf_ifs025": 0.08775028513393754,
+        "icon_seamless": 0.20633377235208353,
+        "gem_seamless": 0.7059151963050178
       },
       "credibilityMode": "computed-local",
       "probabilities": [
@@ -593,8 +931,8 @@
             "gem_seamless": 0.9166666666666666
           },
           "naive": 0.5208333333333333,
-          "weighted": 0.6270562570649608,
-          "delta": 0.10622292373162756
+          "weighted": 0.8091520317078108,
+          "delta": 0.28831869837447754
         },
         {
           "threshold": 25,
@@ -605,8 +943,8 @@
             "gem_seamless": 0.3333333333333333
           },
           "naive": 0.20833333333333331,
-          "weighted": 0.21973431911725338,
-          "delta": 0.01140098578392007
+          "weighted": 0.2770067378070883,
+          "delta": 0.06867340447375497
         },
         {
           "threshold": 50,
@@ -617,20 +955,169 @@
             "gem_seamless": 0.16666666666666666
           },
           "naive": 0.10416666666666666,
-          "weighted": 0.11677496190206889,
-          "delta": 0.012608295235402231
+          "weighted": 0.14215959969208483,
+          "delta": 0.037992933025418174
         }
       ],
       "explanations": [
-        "Trusting GFS (NOAA) 7.3% in Chicago: it tied or beat available sources in 3 of 10 backfill weeks (MAE 32.66 mm).",
-        "Trusting ECMWF IFS 23.9% in Chicago: it tied or beat available sources in 4 of 10 backfill weeks (MAE 9.31 mm).",
-        "Trusting DWD ICON 28.7% in Chicago: it tied or beat available sources in 4 of 10 backfill weeks (MAE 7.60 mm).",
-        "Trusting ECCC GEM 40.1% in Chicago: it tied or beat available sources in 5 of 10 backfill weeks (MAE 5.14 mm)."
+        "Trusting ECCC GEM 71% in Chicago: it was closest (including ties) in 5 of the last 10 backfill weeks (MAE 5.1 mm vs 7.6–32.7 mm for the others).",
+        "Trusting DWD ICON 21% in Chicago: it was closest (including ties) in 4 of the last 10 backfill weeks (MAE 7.6 mm vs 5.1–32.7 mm for the others).",
+        "Trusting ECMWF IFS 9% in Chicago: it was closest (including ties) in 4 of the last 10 backfill weeks (MAE 9.3 mm vs 5.1–32.7 mm for the others).",
+        "Trusting GFS (NOAA) 0% in Chicago: it was closest (including ties) in 3 of the last 10 backfill weeks (MAE 32.7 mm vs 5.1–9.3 mm for the others)."
       ],
-      "trainingHash": "bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0",
+      "trainingHash": "1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2",
       "warnings": []
     },
     {
+      "learning": [
+        {
+          "week": "2026-W37",
+          "trainingWeeks": ["2026-W35", "2026-W36"],
+          "weights": {
+            "gfs_seamless": 0.026752968119713262,
+            "ecmwf_ifs025": 0.1358627826002237,
+            "icon_seamless": 0.6243089917735307,
+            "gem_seamless": 0.21307525750653236
+          },
+          "memoryOn": 0.28396569565005597,
+          "memoryOff": 0.3125,
+          "observed": false,
+          "brierOn": 0.08063651630602021,
+          "brierOff": 0.09765625
+        },
+        {
+          "week": "2026-W38",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37"],
+          "weights": {
+            "gfs_seamless": 0.03190874327323563,
+            "ecmwf_ifs025": 0.06425631815845863,
+            "icon_seamless": 0.720212799140164,
+            "gem_seamless": 0.18362213942814162
+          },
+          "memoryOn": 0.2,
+          "memoryOff": 0.2,
+          "observed": false,
+          "brierOn": 0.04000000000000001,
+          "brierOff": 0.04000000000000001
+        },
+        {
+          "week": "2026-W39",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38"],
+          "weights": {
+            "gfs_seamless": 0.06244931282740115,
+            "ecmwf_ifs025": 0.10556799344427423,
+            "icon_seamless": 0.5999553482998422,
+            "gem_seamless": 0.23202734542848252
+          },
+          "memoryOn": 0.20829954188493413,
+          "memoryOff": 0.33333333333333337,
+          "observed": false,
+          "brierOn": 0.04338869914947343,
+          "brierOff": 0.11111111111111113
+        },
+        {
+          "week": "2026-W40",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38", "2026-W39"],
+          "weights": {
+            "gfs_seamless": 0.04067366300132042,
+            "ecmwf_ifs025": 0.06910180018280628,
+            "icon_seamless": 0.5157286640353228,
+            "gem_seamless": 0.3744958727805505
+          },
+          "memoryOn": 0.14285714285714285,
+          "memoryOff": 0.14285714285714285,
+          "observed": false,
+          "brierOn": 0.02040816326530612,
+          "brierOff": 0.02040816326530612
+        },
+        {
+          "week": "2026-W41",
+          "trainingWeeks": ["2026-W35", "2026-W36", "2026-W37", "2026-W38", "2026-W39", "2026-W40"],
+          "weights": {
+            "gfs_seamless": 0.04797192869650355,
+            "ecmwf_ifs025": 0.07216458076049963,
+            "icon_seamless": 0.507222292549757,
+            "gem_seamless": 0.37264119799323975
+          },
+          "memoryOn": 0.125,
+          "memoryOff": 0.125,
+          "observed": false,
+          "brierOn": 0.015625,
+          "brierOff": 0.015625
+        },
+        {
+          "week": "2026-W42",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41"
+          ],
+          "weights": {
+            "gfs_seamless": 0.06543677000457379,
+            "ecmwf_ifs025": 0.06224538107263633,
+            "icon_seamless": 0.50109646059494,
+            "gem_seamless": 0.37122138832784984
+          },
+          "memoryOn": 0.11111111111111109,
+          "memoryOff": 0.1111111111111111,
+          "observed": false,
+          "brierOn": 0.012345679012345675,
+          "brierOff": 0.012345679012345678
+        },
+        {
+          "week": "2026-W43",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42"
+          ],
+          "weights": {
+            "gfs_seamless": 0.08288859452710212,
+            "ecmwf_ifs025": 0.0740690281749719,
+            "icon_seamless": 0.4829907351476268,
+            "gem_seamless": 0.36005164215029917
+          },
+          "memoryOn": 0.1,
+          "memoryOff": 0.1,
+          "observed": false,
+          "brierOn": 0.010000000000000002,
+          "brierOff": 0.010000000000000002
+        },
+        {
+          "week": "2026-W44",
+          "trainingWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43"
+          ],
+          "weights": {
+            "gfs_seamless": 0.10830164364992952,
+            "ecmwf_ifs025": 0.09691256881357625,
+            "icon_seamless": 0.4391848217384182,
+            "gem_seamless": 0.35560096579807615
+          },
+          "memoryOn": 0.2500529784362747,
+          "memoryOff": 0.3409090909090909,
+          "observed": true,
+          "brierOn": 0.5624205351523026,
+          "brierOff": 0.4344008264462811
+        }
+      ],
       "city": {
         "id": "seattle",
         "name": "Seattle",
@@ -639,7 +1126,7 @@
         "longitude": -122.3139,
         "timezone": "America/Los_Angeles"
       },
-      "fetchedAt": "2026-11-09T15:25:36.223Z",
+      "fetchedAt": "2026-11-09T15:54:57.974Z",
       "provenance": {
         "observed": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00024233&startDate=2026-08-03&endDate=2026-11-08&dataTypes=PRCP&units=metric&format=json",
         "historical": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=47.4444&longitude=-122.3139&start_date=2026-08-03&end_date=2026-11-08&daily=precipitation_sum&timezone=America%2FLos_Angeles&models=gfs_seamless%2Cecmwf_ifs025%2Cicon_seamless%2Cgem_seamless",
@@ -806,10 +1293,10 @@
           "kind": "upcoming"
         },
         "forecasts": {
-          "gfs_seamless": 49.89999999999999,
+          "gfs_seamless": 47.599999999999994,
           "ecmwf_ifs025": 45.699999999999996,
           "icon_seamless": 93.8,
-          "gem_seamless": 61.7
+          "gem_seamless": 64.2
         }
       },
       "scores": [
@@ -820,16 +1307,21 @@
           "hitRate": 0.9,
           "wins": 3,
           "residuals": [
-            9.5,
-            6.200000000000001,
-            7,
-            0.3,
-            -14.4,
-            -4.6000000000000005,
-            1.2000000000000002,
-            -0.30000000000000004,
-            -2,
-            10.699999999999998
+            9.5, 6.200000000000001, 7, 0.3, -14.4, -4.6000000000000005, 1.2000000000000002,
+            -0.30000000000000004, -2, 10.699999999999998
+          ],
+          "comparisonMae": 5.62,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -839,16 +1331,21 @@
           "hitRate": 0.9333333333333333,
           "wins": 2,
           "residuals": [
-            -0.8000000000000007,
-            -8.399999999999999,
-            -9.3,
-            -0.3,
-            -13.299999999999999,
-            -5,
-            -6.800000000000001,
-            -1.4000000000000001,
-            -2.2,
-            -21.700000000000006
+            -0.8000000000000007, -8.399999999999999, -9.3, -0.3, -13.299999999999999, -5,
+            -6.800000000000001, -1.4000000000000001, -2.2, -21.700000000000006
+          ],
+          "comparisonMae": 6.920000000000002,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -858,16 +1355,21 @@
           "hitRate": 0.9666666666666667,
           "wins": 5,
           "residuals": [
-            2.1999999999999993,
-            -0.8999999999999986,
-            0.8999999999999986,
-            -0.8999999999999999,
-            -7.1,
-            -1.7,
-            -1,
-            -0.6000000000000001,
-            -5,
-            0.09999999999999787
+            2.1999999999999993, -0.8999999999999986, 0.8999999999999986, -0.8999999999999999, -7.1,
+            -1.7, -1, -0.6000000000000001, -5, 0.09999999999999787
+          ],
+          "comparisonMae": 2.0399999999999996,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
         {
@@ -877,24 +1379,29 @@
           "hitRate": 0.9333333333333333,
           "wins": 2,
           "residuals": [
-            -6.300000000000001,
-            1.1000000000000014,
-            4.800000000000001,
-            0.3,
-            2.6999999999999993,
-            -2.2,
-            1.5,
-            -1.1,
-            -4.1,
-            8.999999999999996
+            -6.300000000000001, 1.1000000000000014, 4.800000000000001, 0.3, 2.6999999999999993,
+            -2.2, 1.5, -1.1, -4.1, 8.999999999999996
+          ],
+          "comparisonMae": 3.3099999999999996,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         }
       ],
       "weights": {
-        "gfs_seamless": 0.1801979388709514,
-        "ecmwf_ifs025": 0.15061999435930531,
-        "icon_seamless": 0.3924047221466113,
-        "gem_seamless": 0.27677734462313186
+        "gfs_seamless": 0.09358457469423503,
+        "ecmwf_ifs025": 0.04885543198910121,
+        "icon_seamless": 0.5605203617178008,
+        "gem_seamless": 0.29703963159886293
       },
       "credibilityMode": "computed-local",
       "probabilities": [
@@ -907,8 +1414,8 @@
             "gem_seamless": 0.9166666666666666
           },
           "naive": 0.9166666666666666,
-          "weighted": 0.9166666666666665,
-          "delta": -1.1102230246251565e-16
+          "weighted": 0.9166666666666666,
+          "delta": 0
         },
         {
           "threshold": 25,
@@ -919,29 +1426,29 @@
             "gem_seamless": 0.9166666666666666
           },
           "naive": 0.8958333333333333,
-          "weighted": 0.9041150004700578,
-          "delta": 0.008281667136724513
+          "weighted": 0.9125953806675748,
+          "delta": 0.01676204733424158
         },
         {
           "threshold": 50,
           "perSource": {
-            "gfs_seamless": 0.5833333333333334,
+            "gfs_seamless": 0.4166666666666667,
             "ecmwf_ifs025": 0.08333333333333333,
             "icon_seamless": 0.9166666666666666,
             "gem_seamless": 0.9166666666666666
           },
-          "naive": 0.625,
-          "weighted": 0.7310840250769284,
-          "delta": 0.10608402507692838
+          "naive": 0.5833333333333333,
+          "weighted": 0.8291615193286315,
+          "delta": 0.2458281859952982
         }
       ],
       "explanations": [
-        "Trusting GFS (NOAA) 18.0% in Seattle: it tied or beat available sources in 3 of 10 backfill weeks (MAE 5.62 mm).",
-        "Trusting ECMWF IFS 15.1% in Seattle: it tied or beat available sources in 2 of 10 backfill weeks (MAE 6.92 mm).",
-        "Trusting DWD ICON 39.2% in Seattle: it tied or beat available sources in 5 of 10 backfill weeks (MAE 2.04 mm).",
-        "Trusting ECCC GEM 27.7% in Seattle: it tied or beat available sources in 2 of 10 backfill weeks (MAE 3.31 mm)."
+        "Trusting DWD ICON 56% in Seattle: it was closest (including ties) in 5 of the last 10 backfill weeks (MAE 2.0 mm vs 3.3–6.9 mm for the others).",
+        "Trusting ECCC GEM 30% in Seattle: it was closest (including ties) in 2 of the last 10 backfill weeks (MAE 3.3 mm vs 2.0–6.9 mm for the others).",
+        "Trusting GFS (NOAA) 9% in Seattle: it was closest (including ties) in 3 of the last 10 backfill weeks (MAE 5.6 mm vs 2.0–6.9 mm for the others).",
+        "Trusting ECMWF IFS 5% in Seattle: it was closest (including ties) in 2 of the last 10 backfill weeks (MAE 6.9 mm vs 2.0–5.6 mm for the others)."
       ],
-      "trainingHash": "ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c",
+      "trainingHash": "23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc",
       "warnings": []
     }
   ],
@@ -956,11 +1463,11 @@
         "window": "2026-W44",
         "source": "noaa",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "New York NOAA observed 0 mm in backfill 2026-W44.",
+        "sentence": "New York NOAA observed 0.0 mm in backfill 2026-W44.",
         "data": {
           "total": 0
         },
-        "text": "[observed.total] [nyc] [2026-W44] [noaa] [sr:observed.total:nyc:2026-W44:noaa] New York NOAA observed 0 mm in backfill 2026-W44. | data={\"total\":0}"
+        "text": "[observed.total] [nyc] [2026-W44] [noaa] [sr:observed.total:nyc:2026-W44:noaa] New York NOAA observed 0.0 mm in backfill 2026-W44. | data={\"total\":0}"
       },
       {
         "id": "sr:source.forecast:nyc:2026-W44:icon_seamless",
@@ -969,20 +1476,20 @@
         "window": "2026-W44",
         "source": "icon_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "DWD ICON via Open-Meteo historical forecast predicted 0 mm in New York backfill 2026-W44.",
+        "sentence": "DWD ICON via Open-Meteo historical forecast predicted 0.0 mm in New York backfill 2026-W44.",
         "data": {
           "total": 0
         },
-        "text": "[source.forecast] [nyc] [2026-W44] [icon_seamless] [sr:source.forecast:nyc:2026-W44:icon_seamless] DWD ICON via Open-Meteo historical forecast predicted 0 mm in New York backfill 2026-W44. | data={\"total\":0}"
+        "text": "[source.forecast] [nyc] [2026-W44] [icon_seamless] [sr:source.forecast:nyc:2026-W44:icon_seamless] DWD ICON via Open-Meteo historical forecast predicted 0.0 mm in New York backfill 2026-W44. | data={\"total\":0}"
       },
       {
-        "id": "sr:source.score:nyc:2026-W35..2026-W44:e7666eb69734:icon_seamless",
+        "id": "sr:source.score:nyc:2026-W35..2026-W44:6891525cc570:icon_seamless",
         "type": "source.score",
         "city": "nyc",
-        "window": "2026-W35..2026-W44:e7666eb69734",
+        "window": "2026-W35..2026-W44:6891525cc570",
         "source": "icon_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "DWD ICON had MAE 8.44 mm across 10 New York backfill weeks.",
+        "sentence": "DWD ICON had MAE 8.4 mm across 10 New York backfill weeks.",
         "data": {
           "source": "icon_seamless",
           "n": 10,
@@ -990,75 +1497,348 @@
           "hitRate": 0.8333333333333334,
           "wins": 5,
           "residuals": [
-            2.0999999999999996,
-            -17.999999999999993,
-            8.299999999999997,
-            -10.4,
-            6.399999999999999,
-            2.4999999999999982,
-            29.800000000000004,
-            -6.8999999999999995,
-            0,
-            0
+            2.0999999999999996, -17.999999999999993, 8.299999999999997, -10.4, 6.399999999999999,
+            2.4999999999999982, 29.800000000000004, -6.8999999999999995, 0, 0
+          ],
+          "comparisonMae": 8.440000000000001,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
-        "text": "[source.score] [nyc] [2026-W35..2026-W44:e7666eb69734] [icon_seamless] [sr:source.score:nyc:2026-W35..2026-W44:e7666eb69734:icon_seamless] DWD ICON had MAE 8.44 mm across 10 New York backfill weeks. | data={\"source\":\"icon_seamless\",\"n\":10,\"mae\":8.440000000000001,\"hitRate\":0.8333333333333334,\"wins\":5,\"residuals\":[2.0999999999999996,-17.999999999999993,8.299999999999997,-10.4,6.399999999999999,2.4999999999999982,29.800000000000004,-6.8999999999999995,0,0]}"
+        "text": "[source.score] [nyc] [2026-W35..2026-W44:6891525cc570] [icon_seamless] [sr:source.score:nyc:2026-W35..2026-W44:6891525cc570:icon_seamless] DWD ICON had MAE 8.4 mm across 10 New York backfill weeks. | data={\"source\":\"icon_seamless\",\"n\":10,\"mae\":8.440000000000001,\"hitRate\":0.8333333333333334,\"wins\":5,\"residuals\":[2.0999999999999996,-17.999999999999993,8.299999999999997,-10.4,6.399999999999999,2.4999999999999982,29.800000000000004,-6.8999999999999995,0,0],\"comparisonMae\":8.440000000000001,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"]}"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:gfs_seamless",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:gfs_seamless",
         "type": "source.credibility",
         "city": "nyc",
-        "window": "2026-W35..2026-W44:e7666eb69734",
+        "window": "2026-W35..2026-W44:6891525cc570",
         "source": "gfs_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "New York credibility for GFS (NOAA) is 25.19% from backfill inverse MAE.",
+        "sentence": "New York: trusting GFS (NOAA) 25% — closest in 4 of last 10 backfill weeks, MAE 9.2 mm.",
         "data": {
-          "weight": 0.251941140928699,
-          "trainingHash": "e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd"
+          "source": "gfs_seamless",
+          "n": 10,
+          "mae": 9.220000000000002,
+          "hitRate": 0.8333333333333334,
+          "wins": 4,
+          "residuals": [
+            5.300000000000001, 14.8, 21.099999999999998, -0.20000000000000107, 22.60000000000001,
+            3.6999999999999993, 20.1, 4.3999999999999995, 0, 0
+          ],
+          "comparisonMae": 9.220000000000002,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.25088203354103494,
+          "trainingHash": "bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872"
         },
-        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:e7666eb69734] [gfs_seamless] [sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:gfs_seamless] New York credibility for GFS (NOAA) is 25.19% from backfill inverse MAE. | data={\"weight\":0.251941140928699,\"trainingHash\":\"e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd\"}"
+        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:6891525cc570] [gfs_seamless] [sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:gfs_seamless] New York: trusting GFS (NOAA) 25% — closest in 4 of last 10 backfill weeks, MAE 9.2 mm. | data={\"source\":\"gfs_seamless\",\"n\":10,\"mae\":9.220000000000002,\"hitRate\":0.8333333333333334,\"wins\":4,\"residuals\":[5.300000000000001,14.8,21.099999999999998,-0.20000000000000107,22.60000000000001,3.6999999999999993,20.1,4.3999999999999995,0,0],\"comparisonMae\":9.220000000000002,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.25088203354103494,\"trainingHash\":\"bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872\"}"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:ecmwf_ifs025",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:ecmwf_ifs025",
         "type": "source.credibility",
         "city": "nyc",
-        "window": "2026-W35..2026-W44:e7666eb69734",
+        "window": "2026-W35..2026-W44:6891525cc570",
         "source": "ecmwf_ifs025",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "New York credibility for ECMWF IFS is 25.02% from backfill inverse MAE.",
+        "sentence": "New York: trusting ECMWF IFS 24% — closest in 2 of last 10 backfill weeks, MAE 9.3 mm.",
         "data": {
-          "weight": 0.2502272556162589,
-          "trainingHash": "e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd"
+          "source": "ecmwf_ifs025",
+          "n": 10,
+          "mae": 9.290000000000001,
+          "hitRate": 0.8333333333333334,
+          "wins": 2,
+          "residuals": [
+            4.600000000000001, -35.4, -17.4, -2.5000000000000018, -11.700000000000003, -4, -4.5,
+            -12.400000000000002, 0, -0.4
+          ],
+          "comparisonMae": 9.290000000000001,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.242253050428936,
+          "trainingHash": "bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872"
         },
-        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:e7666eb69734] [ecmwf_ifs025] [sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:ecmwf_ifs025] New York credibility for ECMWF IFS is 25.02% from backfill inverse MAE. | data={\"weight\":0.2502272556162589,\"trainingHash\":\"e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd\"}"
+        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:6891525cc570] [ecmwf_ifs025] [sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:ecmwf_ifs025] New York: trusting ECMWF IFS 24% — closest in 2 of last 10 backfill weeks, MAE 9.3 mm. | data={\"source\":\"ecmwf_ifs025\",\"n\":10,\"mae\":9.290000000000001,\"hitRate\":0.8333333333333334,\"wins\":2,\"residuals\":[4.600000000000001,-35.4,-17.4,-2.5000000000000018,-11.700000000000003,-4,-4.5,-12.400000000000002,0,-0.4],\"comparisonMae\":9.290000000000001,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.242253050428936,\"trainingHash\":\"bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872\"}"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:icon_seamless",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:icon_seamless",
         "type": "source.credibility",
         "city": "nyc",
-        "window": "2026-W35..2026-W44:e7666eb69734",
+        "window": "2026-W35..2026-W44:6891525cc570",
         "source": "icon_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "New York credibility for DWD ICON is 27.28% from backfill inverse MAE.",
+        "sentence": "New York: trusting DWD ICON 37% — closest in 5 of last 10 backfill weeks, MAE 8.4 mm.",
         "data": {
-          "weight": 0.27275831147153645,
-          "trainingHash": "e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd"
+          "source": "icon_seamless",
+          "n": 10,
+          "mae": 8.440000000000001,
+          "hitRate": 0.8333333333333334,
+          "wins": 5,
+          "residuals": [
+            2.0999999999999996, -17.999999999999993, 8.299999999999997, -10.4, 6.399999999999999,
+            2.4999999999999982, 29.800000000000004, -6.8999999999999995, 0, 0
+          ],
+          "comparisonMae": 8.440000000000001,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.3705479450703298,
+          "trainingHash": "bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872"
         },
-        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:e7666eb69734] [icon_seamless] [sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:icon_seamless] New York credibility for DWD ICON is 27.28% from backfill inverse MAE. | data={\"weight\":0.27275831147153645,\"trainingHash\":\"e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd\"}"
+        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:6891525cc570] [icon_seamless] [sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:icon_seamless] New York: trusting DWD ICON 37% — closest in 5 of last 10 backfill weeks, MAE 8.4 mm. | data={\"source\":\"icon_seamless\",\"n\":10,\"mae\":8.440000000000001,\"hitRate\":0.8333333333333334,\"wins\":5,\"residuals\":[2.0999999999999996,-17.999999999999993,8.299999999999997,-10.4,6.399999999999999,2.4999999999999982,29.800000000000004,-6.8999999999999995,0,0],\"comparisonMae\":8.440000000000001,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.3705479450703298,\"trainingHash\":\"bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872\"}"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:gem_seamless",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:gem_seamless",
         "type": "source.credibility",
         "city": "nyc",
-        "window": "2026-W35..2026-W44:e7666eb69734",
+        "window": "2026-W35..2026-W44:6891525cc570",
         "source": "gem_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "New York credibility for ECCC GEM is 22.51% from backfill inverse MAE.",
+        "sentence": "New York: trusting ECCC GEM 14% — closest in 4 of last 10 backfill weeks, MAE 10.4 mm.",
         "data": {
-          "weight": 0.22507329198350565,
-          "trainingHash": "e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd"
+          "source": "gem_seamless",
+          "n": 10,
+          "mae": 10.440000000000001,
+          "hitRate": 0.8666666666666667,
+          "wins": 4,
+          "residuals": [
+            -60.5, -9, -8.000000000000007, 2.5, 7.800000000000004, -4.100000000000001,
+            6.700000000000003, -5.8, 0, 0
+          ],
+          "comparisonMae": 10.440000000000001,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.13631697095969922,
+          "trainingHash": "bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872"
         },
-        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:e7666eb69734] [gem_seamless] [sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:gem_seamless] New York credibility for ECCC GEM is 22.51% from backfill inverse MAE. | data={\"weight\":0.22507329198350565,\"trainingHash\":\"e7666eb69734296244e7c73e3ff3b52e54e9a14b49a49c1f28a889e28a57d4cd\"}"
+        "text": "[source.credibility] [nyc] [2026-W35..2026-W44:6891525cc570] [gem_seamless] [sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:gem_seamless] New York: trusting ECCC GEM 14% — closest in 4 of last 10 backfill weeks, MAE 10.4 mm. | data={\"source\":\"gem_seamless\",\"n\":10,\"mae\":10.440000000000001,\"hitRate\":0.8666666666666667,\"wins\":4,\"residuals\":[-60.5,-9,-8.000000000000007,2.5,7.800000000000004,-4.100000000000001,6.700000000000003,-5.8,0,0],\"comparisonMae\":10.440000000000001,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.13631697095969922,\"trainingHash\":\"bc63be53dbedbcbdb893946e8c6701b3c2b74f9e93e450533f4c9e9f89d6c872\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W35:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W35",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W35 New York: NOAA observed 13.2 mm; closest source DWD ICON (11.1 mm); GFS ran dry by 5.3 mm.",
+        "data": {
+          "observed": 13.200000000000001,
+          "forecasts": {
+            "gfs_seamless": 7.9,
+            "ecmwf_ifs025": 8.6,
+            "icon_seamless": 11.100000000000001,
+            "gem_seamless": 73.7
+          },
+          "closest": "icon_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W35] [noaa] [sr:settlement.note:nyc:2026-W35:noaa] Backfill 2026-W35 New York: NOAA observed 13.2 mm; closest source DWD ICON (11.1 mm); GFS ran dry by 5.3 mm. | data={\"observed\":13.200000000000001,\"forecasts\":{\"gfs_seamless\":7.9,\"ecmwf_ifs025\":8.6,\"icon_seamless\":11.100000000000001,\"gem_seamless\":73.7},\"closest\":\"icon_seamless\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W36:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W36",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W36 New York: NOAA observed 24.6 mm; closest source ECCC GEM (33.6 mm); GFS ran dry by 14.8 mm.",
+        "data": {
+          "observed": 24.6,
+          "forecasts": {
+            "gfs_seamless": 9.8,
+            "ecmwf_ifs025": 60,
+            "icon_seamless": 42.599999999999994,
+            "gem_seamless": 33.6
+          },
+          "closest": "gem_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W36] [noaa] [sr:settlement.note:nyc:2026-W36:noaa] Backfill 2026-W36 New York: NOAA observed 24.6 mm; closest source ECCC GEM (33.6 mm); GFS ran dry by 14.8 mm. | data={\"observed\":24.6,\"forecasts\":{\"gfs_seamless\":9.8,\"ecmwf_ifs025\":60,\"icon_seamless\":42.599999999999994,\"gem_seamless\":33.6},\"closest\":\"gem_seamless\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W37:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W37",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W37 New York: NOAA observed 25.9 mm; closest source ECCC GEM (33.9 mm); GFS ran dry by 21.1 mm.",
+        "data": {
+          "observed": 25.9,
+          "forecasts": {
+            "gfs_seamless": 4.8,
+            "ecmwf_ifs025": 43.3,
+            "icon_seamless": 17.6,
+            "gem_seamless": 33.900000000000006
+          },
+          "closest": "gem_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W37] [noaa] [sr:settlement.note:nyc:2026-W37:noaa] Backfill 2026-W37 New York: NOAA observed 25.9 mm; closest source ECCC GEM (33.9 mm); GFS ran dry by 21.1 mm. | data={\"observed\":25.9,\"forecasts\":{\"gfs_seamless\":4.8,\"ecmwf_ifs025\":43.3,\"icon_seamless\":17.6,\"gem_seamless\":33.900000000000006},\"closest\":\"gem_seamless\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W38:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W38",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W38 New York: NOAA observed 7.1 mm; closest source GFS (NOAA) (7.3 mm); GFS ran wet by 0.2 mm.",
+        "data": {
+          "observed": 7.1,
+          "forecasts": {
+            "gfs_seamless": 7.300000000000001,
+            "ecmwf_ifs025": 9.600000000000001,
+            "icon_seamless": 17.5,
+            "gem_seamless": 4.6
+          },
+          "closest": "gfs_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W38] [noaa] [sr:settlement.note:nyc:2026-W38:noaa] Backfill 2026-W38 New York: NOAA observed 7.1 mm; closest source GFS (NOAA) (7.3 mm); GFS ran wet by 0.2 mm. | data={\"observed\":7.1,\"forecasts\":{\"gfs_seamless\":7.300000000000001,\"ecmwf_ifs025\":9.600000000000001,\"icon_seamless\":17.5,\"gem_seamless\":4.6},\"closest\":\"gfs_seamless\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W39:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W39",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W39 New York: NOAA observed 67.7 mm; closest source DWD ICON (61.3 mm); GFS ran dry by 22.6 mm.",
+        "data": {
+          "observed": 67.7,
+          "forecasts": {
+            "gfs_seamless": 45.099999999999994,
+            "ecmwf_ifs025": 79.4,
+            "icon_seamless": 61.300000000000004,
+            "gem_seamless": 59.9
+          },
+          "closest": "icon_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W39] [noaa] [sr:settlement.note:nyc:2026-W39:noaa] Backfill 2026-W39 New York: NOAA observed 67.7 mm; closest source DWD ICON (61.3 mm); GFS ran dry by 22.6 mm. | data={\"observed\":67.7,\"forecasts\":{\"gfs_seamless\":45.099999999999994,\"ecmwf_ifs025\":79.4,\"icon_seamless\":61.300000000000004,\"gem_seamless\":59.9},\"closest\":\"icon_seamless\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W40:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W40",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W40 New York: NOAA observed 15.2 mm; closest source DWD ICON (12.7 mm); GFS ran dry by 3.7 mm.",
+        "data": {
+          "observed": 15.2,
+          "forecasts": {
+            "gfs_seamless": 11.5,
+            "ecmwf_ifs025": 19.2,
+            "icon_seamless": 12.700000000000001,
+            "gem_seamless": 19.3
+          },
+          "closest": "icon_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W40] [noaa] [sr:settlement.note:nyc:2026-W40:noaa] Backfill 2026-W40 New York: NOAA observed 15.2 mm; closest source DWD ICON (12.7 mm); GFS ran dry by 3.7 mm. | data={\"observed\":15.2,\"forecasts\":{\"gfs_seamless\":11.5,\"ecmwf_ifs025\":19.2,\"icon_seamless\":12.700000000000001,\"gem_seamless\":19.3},\"closest\":\"icon_seamless\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W41:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W41",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W41 New York: NOAA observed 46.7 mm; closest source ECMWF IFS (51.2 mm); GFS ran dry by 20.1 mm.",
+        "data": {
+          "observed": 46.7,
+          "forecasts": {
+            "gfs_seamless": 26.6,
+            "ecmwf_ifs025": 51.2,
+            "icon_seamless": 16.9,
+            "gem_seamless": 40
+          },
+          "closest": "ecmwf_ifs025"
+        },
+        "text": "[settlement.note] [nyc] [2026-W41] [noaa] [sr:settlement.note:nyc:2026-W41:noaa] Backfill 2026-W41 New York: NOAA observed 46.7 mm; closest source ECMWF IFS (51.2 mm); GFS ran dry by 20.1 mm. | data={\"observed\":46.7,\"forecasts\":{\"gfs_seamless\":26.6,\"ecmwf_ifs025\":51.2,\"icon_seamless\":16.9,\"gem_seamless\":40},\"closest\":\"ecmwf_ifs025\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W42:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W42",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W42 New York: NOAA observed 5.9 mm; closest source GFS (NOAA) (1.5 mm); GFS ran dry by 4.4 mm.",
+        "data": {
+          "observed": 5.8999999999999995,
+          "forecasts": {
+            "gfs_seamless": 1.5,
+            "ecmwf_ifs025": 18.3,
+            "icon_seamless": 12.799999999999999,
+            "gem_seamless": 11.7
+          },
+          "closest": "gfs_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W42] [noaa] [sr:settlement.note:nyc:2026-W42:noaa] Backfill 2026-W42 New York: NOAA observed 5.9 mm; closest source GFS (NOAA) (1.5 mm); GFS ran dry by 4.4 mm. | data={\"observed\":5.8999999999999995,\"forecasts\":{\"gfs_seamless\":1.5,\"ecmwf_ifs025\":18.3,\"icon_seamless\":12.799999999999999,\"gem_seamless\":11.7},\"closest\":\"gfs_seamless\"}"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W43:noaa",
+        "type": "settlement.note",
+        "city": "nyc",
+        "window": "2026-W43",
+        "source": "noaa",
+        "namespace": "skyhedge-recall:forecaster",
+        "sentence": "Backfill 2026-W43 New York: NOAA observed 0.0 mm; closest source GFS (NOAA) (0.0 mm); GFS ran wet by 0.0 mm.",
+        "data": {
+          "observed": 0,
+          "forecasts": {
+            "gfs_seamless": 0,
+            "ecmwf_ifs025": 0,
+            "icon_seamless": 0,
+            "gem_seamless": 0
+          },
+          "closest": "gfs_seamless"
+        },
+        "text": "[settlement.note] [nyc] [2026-W43] [noaa] [sr:settlement.note:nyc:2026-W43:noaa] Backfill 2026-W43 New York: NOAA observed 0.0 mm; closest source GFS (NOAA) (0.0 mm); GFS ran wet by 0.0 mm. | data={\"observed\":0,\"forecasts\":{\"gfs_seamless\":0,\"ecmwf_ifs025\":0,\"icon_seamless\":0,\"gem_seamless\":0},\"closest\":\"gfs_seamless\"}"
       },
       {
         "id": "sr:settlement.note:nyc:2026-W44:noaa",
@@ -1067,20 +1847,27 @@
         "window": "2026-W44",
         "source": "noaa",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "New York backfill 2026-W44 is settled from complete NOAA daily observations.",
+        "sentence": "Backfill 2026-W44 New York: NOAA observed 0.0 mm; closest source GFS (NOAA) (0.0 mm); GFS ran wet by 0.0 mm.",
         "data": {
-          "observed": 0
+          "observed": 0,
+          "forecasts": {
+            "gfs_seamless": 0,
+            "ecmwf_ifs025": 0.4,
+            "icon_seamless": 0,
+            "gem_seamless": 0
+          },
+          "closest": "gfs_seamless"
         },
-        "text": "[settlement.note] [nyc] [2026-W44] [noaa] [sr:settlement.note:nyc:2026-W44:noaa] New York backfill 2026-W44 is settled from complete NOAA daily observations. | data={\"observed\":0}"
+        "text": "[settlement.note] [nyc] [2026-W44] [noaa] [sr:settlement.note:nyc:2026-W44:noaa] Backfill 2026-W44 New York: NOAA observed 0.0 mm; closest source GFS (NOAA) (0.0 mm); GFS ran wet by 0.0 mm. | data={\"observed\":0,\"forecasts\":{\"gfs_seamless\":0,\"ecmwf_ifs025\":0.4,\"icon_seamless\":0,\"gem_seamless\":0},\"closest\":\"gfs_seamless\"}"
       },
       {
-        "id": "sr:pricing.adjustment:nyc:next:2026-11-09:2026-W35..2026-W44:e7666eb69734",
+        "id": "sr:pricing.adjustment:nyc:next:2026-11-09:2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a",
         "type": "pricing.adjustment",
         "city": "nyc",
         "window": "next:2026-11-09",
-        "source": "2026-W35..2026-W44:e7666eb69734",
+        "source": "2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "New York computed-local weekly 25 mm trigger probability changes from 0.5416666666666666 equal-weight to 0.5461738374587728 memory-weighted.",
+        "sentence": "New York computed-local weekly 25 mm trigger probability changes from 54% equal-weight to 57% memory-weighted.",
         "data": {
           "threshold": 25,
           "perSource": {
@@ -1090,40 +1877,37 @@
             "gem_seamless": 0.5
           },
           "naive": 0.5416666666666666,
-          "weighted": 0.5461738374587728,
-          "delta": 0.004507170792106163
+          "weighted": 0.5653534004750961,
+          "delta": 0.02368673380842945
         },
-        "text": "[pricing.adjustment] [nyc] [next:2026-11-09] [2026-W35..2026-W44:e7666eb69734] [sr:pricing.adjustment:nyc:next:2026-11-09:2026-W35..2026-W44:e7666eb69734] New York computed-local weekly 25 mm trigger probability changes from 0.5416666666666666 equal-weight to 0.5461738374587728 memory-weighted. | data={\"threshold\":25,\"perSource\":{\"gfs_seamless\":0.9166666666666666,\"ecmwf_ifs025\":0.08333333333333333,\"icon_seamless\":0.6666666666666666,\"gem_seamless\":0.5},\"naive\":0.5416666666666666,\"weighted\":0.5461738374587728,\"delta\":0.004507170792106163}"
+        "text": "[pricing.adjustment] [nyc] [next:2026-11-09] [2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a] [sr:pricing.adjustment:nyc:next:2026-11-09:2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a] New York computed-local weekly 25 mm trigger probability changes from 54% equal-weight to 57% memory-weighted. | data={\"threshold\":25,\"perSource\":{\"gfs_seamless\":0.9166666666666666,\"ecmwf_ifs025\":0.08333333333333333,\"icon_seamless\":0.6666666666666666,\"gem_seamless\":0.5},\"naive\":0.5416666666666666,\"weighted\":0.5653534004750961,\"delta\":0.02368673380842945}"
       },
       {
-        "id": "sr:pick.logged:nyc:next:2026-11-09:2026-W35..2026-W44:e7666eb69734",
+        "id": "sr:pick.logged:nyc:next:2026-11-09:2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a",
         "type": "pick.logged",
         "city": "nyc",
         "window": "next:2026-11-09",
-        "source": "2026-W35..2026-W44:e7666eb69734",
+        "source": "2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a",
         "namespace": "skyhedge-recall:profile:demo",
-        "sentence": "Demo pick journal: upcoming New York 25 mm trigger prediction is 0.5461738374587728.",
+        "sentence": "Demo pick journal: upcoming New York 25 mm trigger prediction is 57%.",
         "data": {
-          "probability": 0.5461738374587728,
+          "probability": 0.5653534004750961,
           "threshold": 25,
           "label": "demo pick journal"
         },
-        "text": "[pick.logged] [nyc] [next:2026-11-09] [2026-W35..2026-W44:e7666eb69734] [sr:pick.logged:nyc:next:2026-11-09:2026-W35..2026-W44:e7666eb69734] Demo pick journal: upcoming New York 25 mm trigger prediction is 0.5461738374587728. | data={\"probability\":0.5461738374587728,\"threshold\":25,\"label\":\"demo pick journal\"}"
+        "text": "[pick.logged] [nyc] [next:2026-11-09] [2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a] [sr:pick.logged:nyc:next:2026-11-09:2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a] Demo pick journal: upcoming New York 25 mm trigger prediction is 57%. | data={\"probability\":0.5653534004750961,\"threshold\":25,\"label\":\"demo pick journal\"}"
       },
       {
-        "id": "sr:pick.scored:nyc:2026-W44:2026-W35..2026-W44:e7666eb69734",
+        "id": "sr:pick.scored:nyc:2026-W44:2026-W35..2026-W44:6891525cc570",
         "type": "pick.scored",
         "city": "nyc",
         "window": "2026-W44",
-        "source": "2026-W35..2026-W44:e7666eb69734",
+        "source": "2026-W35..2026-W44:6891525cc570",
         "namespace": "skyhedge-recall:profile:demo",
-        "sentence": "Demo pick journal backfill: walk-forward 25 mm prediction 0.11570188136499712; observed trigger false.",
+        "sentence": "Demo pick journal backfill: walk-forward 25 mm prediction 13%; observed trigger no.",
         "data": {
-          "probability": 0.11570188136499712,
-          "outcome": false,
-          "brier": 0.013386925351399868,
-          "label": "demo pick journal backfill",
-          "trainingWindows": [
+          "week": "2026-W44",
+          "trainingWeeks": [
             "2026-W35",
             "2026-W36",
             "2026-W37",
@@ -1133,9 +1917,21 @@
             "2026-W41",
             "2026-W42",
             "2026-W43"
-          ]
+          ],
+          "weights": {
+            "gfs_seamless": 0.24791713788398972,
+            "ecmwf_ifs025": 0.24381942802206205,
+            "icon_seamless": 0.3823849800262431,
+            "gem_seamless": 0.12587845406770518
+          },
+          "memoryOn": 0.12567136182056757,
+          "memoryOff": 0.11363636363636365,
+          "observed": false,
+          "brierOn": 0.01579329118183601,
+          "brierOff": 0.01291322314049587,
+          "label": "demo pick journal backfill"
         },
-        "text": "[pick.scored] [nyc] [2026-W44] [2026-W35..2026-W44:e7666eb69734] [sr:pick.scored:nyc:2026-W44:2026-W35..2026-W44:e7666eb69734] Demo pick journal backfill: walk-forward 25 mm prediction 0.11570188136499712; observed trigger false. | data={\"probability\":0.11570188136499712,\"outcome\":false,\"brier\":0.013386925351399868,\"label\":\"demo pick journal backfill\",\"trainingWindows\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\"]}"
+        "text": "[pick.scored] [nyc] [2026-W44] [2026-W35..2026-W44:6891525cc570] [sr:pick.scored:nyc:2026-W44:2026-W35..2026-W44:6891525cc570] Demo pick journal backfill: walk-forward 25 mm prediction 13%; observed trigger no. | data={\"week\":\"2026-W44\",\"trainingWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\"],\"weights\":{\"gfs_seamless\":0.24791713788398972,\"ecmwf_ifs025\":0.24381942802206205,\"icon_seamless\":0.3823849800262431,\"gem_seamless\":0.12587845406770518},\"memoryOn\":0.12567136182056757,\"memoryOff\":0.11363636363636365,\"observed\":false,\"brierOn\":0.01579329118183601,\"brierOff\":0.01291322314049587,\"label\":\"demo pick journal backfill\"}"
       },
       {
         "id": "sr:observed.total:chicago:2026-W44:noaa",
@@ -1164,13 +1960,13 @@
         "text": "[source.forecast] [chicago] [2026-W44] [gem_seamless] [sr:source.forecast:chicago:2026-W44:gem_seamless] ECCC GEM via Open-Meteo historical forecast predicted 3.8 mm in Chicago backfill 2026-W44. | data={\"total\":3.8}"
       },
       {
-        "id": "sr:source.score:chicago:2026-W35..2026-W44:bd66622892cd:gem_seamless",
+        "id": "sr:source.score:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless",
         "type": "source.score",
         "city": "chicago",
-        "window": "2026-W35..2026-W44:bd66622892cd",
+        "window": "2026-W35..2026-W44:d0d833f97936",
         "source": "gem_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "ECCC GEM had MAE 5.14 mm across 10 Chicago backfill weeks.",
+        "sentence": "ECCC GEM had MAE 5.1 mm across 10 Chicago backfill weeks.",
         "data": {
           "source": "gem_seamless",
           "n": 10,
@@ -1178,75 +1974,168 @@
           "hitRate": 0.8666666666666667,
           "wins": 5,
           "residuals": [
-            -6.700000000000001,
-            5.1,
-            -2.5,
-            -1,
-            0,
-            30.599999999999994,
-            -0.2,
-            5.100000000000001,
-            0,
+            -6.700000000000001, 5.1, -2.5, -1, 0, 30.599999999999994, -0.2, 5.100000000000001, 0,
             -0.19999999999999973
+          ],
+          "comparisonMae": 5.14,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
-        "text": "[source.score] [chicago] [2026-W35..2026-W44:bd66622892cd] [gem_seamless] [sr:source.score:chicago:2026-W35..2026-W44:bd66622892cd:gem_seamless] ECCC GEM had MAE 5.14 mm across 10 Chicago backfill weeks. | data={\"source\":\"gem_seamless\",\"n\":10,\"mae\":5.14,\"hitRate\":0.8666666666666667,\"wins\":5,\"residuals\":[-6.700000000000001,5.1,-2.5,-1,0,30.599999999999994,-0.2,5.100000000000001,0,-0.19999999999999973]}"
+        "text": "[source.score] [chicago] [2026-W35..2026-W44:d0d833f97936] [gem_seamless] [sr:source.score:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless] ECCC GEM had MAE 5.1 mm across 10 Chicago backfill weeks. | data={\"source\":\"gem_seamless\",\"n\":10,\"mae\":5.14,\"hitRate\":0.8666666666666667,\"wins\":5,\"residuals\":[-6.700000000000001,5.1,-2.5,-1,0,30.599999999999994,-0.2,5.100000000000001,0,-0.19999999999999973],\"comparisonMae\":5.14,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"]}"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:gfs_seamless",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gfs_seamless",
         "type": "source.credibility",
         "city": "chicago",
-        "window": "2026-W35..2026-W44:bd66622892cd",
+        "window": "2026-W35..2026-W44:d0d833f97936",
         "source": "gfs_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Chicago credibility for GFS (NOAA) is 7.32% from backfill inverse MAE.",
+        "sentence": "Chicago: trusting GFS (NOAA) 0% — closest in 3 of last 10 backfill weeks, MAE 32.7 mm.",
         "data": {
-          "weight": 0.07320199622532488,
-          "trainingHash": "bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0"
+          "source": "gfs_seamless",
+          "n": 10,
+          "mae": 32.66,
+          "hitRate": 0.7666666666666667,
+          "wins": 3,
+          "residuals": [
+            -57.699999999999996, 16.1, 0.8999999999999999, -202.5, 0, 23.89999999999999, -0.7, 21.6,
+            0, 3.2
+          ],
+          "comparisonMae": 32.66,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 7.462089611005953e-7,
+          "trainingHash": "1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2"
         },
-        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:bd66622892cd] [gfs_seamless] [sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:gfs_seamless] Chicago credibility for GFS (NOAA) is 7.32% from backfill inverse MAE. | data={\"weight\":0.07320199622532488,\"trainingHash\":\"bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0\"}"
+        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:d0d833f97936] [gfs_seamless] [sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gfs_seamless] Chicago: trusting GFS (NOAA) 0% — closest in 3 of last 10 backfill weeks, MAE 32.7 mm. | data={\"source\":\"gfs_seamless\",\"n\":10,\"mae\":32.66,\"hitRate\":0.7666666666666667,\"wins\":3,\"residuals\":[-57.699999999999996,16.1,0.8999999999999999,-202.5,0,23.89999999999999,-0.7,21.6,0,3.2],\"comparisonMae\":32.66,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":7.462089611005953e-7,\"trainingHash\":\"1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2\"}"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:ecmwf_ifs025",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:ecmwf_ifs025",
         "type": "source.credibility",
         "city": "chicago",
-        "window": "2026-W35..2026-W44:bd66622892cd",
+        "window": "2026-W35..2026-W44:d0d833f97936",
         "source": "ecmwf_ifs025",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Chicago credibility for ECMWF IFS is 23.90% from backfill inverse MAE.",
+        "sentence": "Chicago: trusting ECMWF IFS 9% — closest in 4 of last 10 backfill weeks, MAE 9.3 mm.",
         "data": {
-          "weight": 0.23898925246793742,
-          "trainingHash": "bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0"
+          "source": "ecmwf_ifs025",
+          "n": 10,
+          "mae": 9.31,
+          "hitRate": 0.9333333333333333,
+          "wins": 4,
+          "residuals": [
+            -5.699999999999999, -8.700000000000003, -11, -49.89999999999999, -6.3,
+            -6.300000000000004, -0.2, 2.400000000000002, 0, 2.6
+          ],
+          "comparisonMae": 9.31,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.08775028513393754,
+          "trainingHash": "1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2"
         },
-        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:bd66622892cd] [ecmwf_ifs025] [sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:ecmwf_ifs025] Chicago credibility for ECMWF IFS is 23.90% from backfill inverse MAE. | data={\"weight\":0.23898925246793742,\"trainingHash\":\"bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0\"}"
+        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:d0d833f97936] [ecmwf_ifs025] [sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:ecmwf_ifs025] Chicago: trusting ECMWF IFS 9% — closest in 4 of last 10 backfill weeks, MAE 9.3 mm. | data={\"source\":\"ecmwf_ifs025\",\"n\":10,\"mae\":9.31,\"hitRate\":0.9333333333333333,\"wins\":4,\"residuals\":[-5.699999999999999,-8.700000000000003,-11,-49.89999999999999,-6.3,-6.300000000000004,-0.2,2.400000000000002,0,2.6],\"comparisonMae\":9.31,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.08775028513393754,\"trainingHash\":\"1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2\"}"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:icon_seamless",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:icon_seamless",
         "type": "source.credibility",
         "city": "chicago",
-        "window": "2026-W35..2026-W44:bd66622892cd",
+        "window": "2026-W35..2026-W44:d0d833f97936",
         "source": "icon_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Chicago credibility for DWD ICON is 28.65% from backfill inverse MAE.",
+        "sentence": "Chicago: trusting DWD ICON 21% — closest in 4 of last 10 backfill weeks, MAE 7.6 mm.",
         "data": {
-          "weight": 0.286509208481911,
-          "trainingHash": "bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0"
+          "source": "icon_seamless",
+          "n": 10,
+          "mae": 7.6,
+          "hitRate": 0.9666666666666667,
+          "wins": 4,
+          "residuals": [
+            -2.7000000000000006, -0.6999999999999993, -2, -48.8, -3.1, -10.5, -0.2,
+            7.699999999999999, 0, -0.2999999999999998
+          ],
+          "comparisonMae": 7.6,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.20633377235208353,
+          "trainingHash": "1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2"
         },
-        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:bd66622892cd] [icon_seamless] [sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:icon_seamless] Chicago credibility for DWD ICON is 28.65% from backfill inverse MAE. | data={\"weight\":0.286509208481911,\"trainingHash\":\"bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0\"}"
+        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:d0d833f97936] [icon_seamless] [sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:icon_seamless] Chicago: trusting DWD ICON 21% — closest in 4 of last 10 backfill weeks, MAE 7.6 mm. | data={\"source\":\"icon_seamless\",\"n\":10,\"mae\":7.6,\"hitRate\":0.9666666666666667,\"wins\":4,\"residuals\":[-2.7000000000000006,-0.6999999999999993,-2,-48.8,-3.1,-10.5,-0.2,7.699999999999999,0,-0.2999999999999998],\"comparisonMae\":7.6,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.20633377235208353,\"trainingHash\":\"1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2\"}"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:gem_seamless",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless",
         "type": "source.credibility",
         "city": "chicago",
-        "window": "2026-W35..2026-W44:bd66622892cd",
+        "window": "2026-W35..2026-W44:d0d833f97936",
         "source": "gem_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Chicago credibility for ECCC GEM is 40.13% from backfill inverse MAE.",
+        "sentence": "Chicago: trusting ECCC GEM 71% — closest in 5 of last 10 backfill weeks, MAE 5.1 mm.",
         "data": {
-          "weight": 0.4012995428248266,
-          "trainingHash": "bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0"
+          "source": "gem_seamless",
+          "n": 10,
+          "mae": 5.14,
+          "hitRate": 0.8666666666666667,
+          "wins": 5,
+          "residuals": [
+            -6.700000000000001, 5.1, -2.5, -1, 0, 30.599999999999994, -0.2, 5.100000000000001, 0,
+            -0.19999999999999973
+          ],
+          "comparisonMae": 5.14,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.7059151963050178,
+          "trainingHash": "1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2"
         },
-        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:bd66622892cd] [gem_seamless] [sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:gem_seamless] Chicago credibility for ECCC GEM is 40.13% from backfill inverse MAE. | data={\"weight\":0.4012995428248266,\"trainingHash\":\"bd66622892cd02f8846a79fba27a8040d4ecbea9a848334bc938233dfb0be4e0\"}"
+        "text": "[source.credibility] [chicago] [2026-W35..2026-W44:d0d833f97936] [gem_seamless] [sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless] Chicago: trusting ECCC GEM 71% — closest in 5 of last 10 backfill weeks, MAE 5.1 mm. | data={\"source\":\"gem_seamless\",\"n\":10,\"mae\":5.14,\"hitRate\":0.8666666666666667,\"wins\":5,\"residuals\":[-6.700000000000001,5.1,-2.5,-1,0,30.599999999999994,-0.2,5.100000000000001,0,-0.19999999999999973],\"comparisonMae\":5.14,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.7059151963050178,\"trainingHash\":\"1394a86bc028276a1a8c234279eb31ea96be22e612fca862ab8e88df435d1da2\"}"
       },
       {
         "id": "sr:settlement.note:chicago:2026-W44:noaa",
@@ -1255,11 +2144,18 @@
         "window": "2026-W44",
         "source": "noaa",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Chicago backfill 2026-W44 is settled from complete NOAA daily observations.",
+        "sentence": "Backfill 2026-W44 Chicago: NOAA observed 3.6 mm; closest source ECCC GEM (3.8 mm); GFS ran dry by 3.2 mm.",
         "data": {
-          "observed": 3.6
+          "observed": 3.6,
+          "forecasts": {
+            "gfs_seamless": 0.4,
+            "ecmwf_ifs025": 1,
+            "icon_seamless": 3.9,
+            "gem_seamless": 3.8
+          },
+          "closest": "gem_seamless"
         },
-        "text": "[settlement.note] [chicago] [2026-W44] [noaa] [sr:settlement.note:chicago:2026-W44:noaa] Chicago backfill 2026-W44 is settled from complete NOAA daily observations. | data={\"observed\":3.6}"
+        "text": "[settlement.note] [chicago] [2026-W44] [noaa] [sr:settlement.note:chicago:2026-W44:noaa] Backfill 2026-W44 Chicago: NOAA observed 3.6 mm; closest source ECCC GEM (3.8 mm); GFS ran dry by 3.2 mm. | data={\"observed\":3.6,\"forecasts\":{\"gfs_seamless\":0.4,\"ecmwf_ifs025\":1,\"icon_seamless\":3.9,\"gem_seamless\":3.8},\"closest\":\"gem_seamless\"}"
       },
       {
         "id": "sr:observed.total:seattle:2026-W44:noaa",
@@ -1268,11 +2164,11 @@
         "window": "2026-W44",
         "source": "noaa",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Seattle NOAA observed 25.099999999999998 mm in backfill 2026-W44.",
+        "sentence": "Seattle NOAA observed 25.1 mm in backfill 2026-W44.",
         "data": {
           "total": 25.099999999999998
         },
-        "text": "[observed.total] [seattle] [2026-W44] [noaa] [sr:observed.total:seattle:2026-W44:noaa] Seattle NOAA observed 25.099999999999998 mm in backfill 2026-W44. | data={\"total\":25.099999999999998}"
+        "text": "[observed.total] [seattle] [2026-W44] [noaa] [sr:observed.total:seattle:2026-W44:noaa] Seattle NOAA observed 25.1 mm in backfill 2026-W44. | data={\"total\":25.099999999999998}"
       },
       {
         "id": "sr:source.forecast:seattle:2026-W44:icon_seamless",
@@ -1281,20 +2177,20 @@
         "window": "2026-W44",
         "source": "icon_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "DWD ICON via Open-Meteo historical forecast predicted 25 mm in Seattle backfill 2026-W44.",
+        "sentence": "DWD ICON via Open-Meteo historical forecast predicted 25.0 mm in Seattle backfill 2026-W44.",
         "data": {
           "total": 25
         },
-        "text": "[source.forecast] [seattle] [2026-W44] [icon_seamless] [sr:source.forecast:seattle:2026-W44:icon_seamless] DWD ICON via Open-Meteo historical forecast predicted 25 mm in Seattle backfill 2026-W44. | data={\"total\":25}"
+        "text": "[source.forecast] [seattle] [2026-W44] [icon_seamless] [sr:source.forecast:seattle:2026-W44:icon_seamless] DWD ICON via Open-Meteo historical forecast predicted 25.0 mm in Seattle backfill 2026-W44. | data={\"total\":25}"
       },
       {
-        "id": "sr:source.score:seattle:2026-W35..2026-W44:ba8e4d8b7de6:icon_seamless",
+        "id": "sr:source.score:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless",
         "type": "source.score",
         "city": "seattle",
-        "window": "2026-W35..2026-W44:ba8e4d8b7de6",
+        "window": "2026-W35..2026-W44:0ad12f448187",
         "source": "icon_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "DWD ICON had MAE 2.04 mm across 10 Seattle backfill weeks.",
+        "sentence": "DWD ICON had MAE 2.0 mm across 10 Seattle backfill weeks.",
         "data": {
           "source": "icon_seamless",
           "n": 10,
@@ -1302,75 +2198,168 @@
           "hitRate": 0.9666666666666667,
           "wins": 5,
           "residuals": [
-            2.1999999999999993,
-            -0.8999999999999986,
-            0.8999999999999986,
-            -0.8999999999999999,
-            -7.1,
-            -1.7,
-            -1,
-            -0.6000000000000001,
-            -5,
-            0.09999999999999787
+            2.1999999999999993, -0.8999999999999986, 0.8999999999999986, -0.8999999999999999, -7.1,
+            -1.7, -1, -0.6000000000000001, -5, 0.09999999999999787
+          ],
+          "comparisonMae": 2.0399999999999996,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
           ]
         },
-        "text": "[source.score] [seattle] [2026-W35..2026-W44:ba8e4d8b7de6] [icon_seamless] [sr:source.score:seattle:2026-W35..2026-W44:ba8e4d8b7de6:icon_seamless] DWD ICON had MAE 2.04 mm across 10 Seattle backfill weeks. | data={\"source\":\"icon_seamless\",\"n\":10,\"mae\":2.0399999999999996,\"hitRate\":0.9666666666666667,\"wins\":5,\"residuals\":[2.1999999999999993,-0.8999999999999986,0.8999999999999986,-0.8999999999999999,-7.1,-1.7,-1,-0.6000000000000001,-5,0.09999999999999787]}"
+        "text": "[source.score] [seattle] [2026-W35..2026-W44:0ad12f448187] [icon_seamless] [sr:source.score:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless] DWD ICON had MAE 2.0 mm across 10 Seattle backfill weeks. | data={\"source\":\"icon_seamless\",\"n\":10,\"mae\":2.0399999999999996,\"hitRate\":0.9666666666666667,\"wins\":5,\"residuals\":[2.1999999999999993,-0.8999999999999986,0.8999999999999986,-0.8999999999999999,-7.1,-1.7,-1,-0.6000000000000001,-5,0.09999999999999787],\"comparisonMae\":2.0399999999999996,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"]}"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:gfs_seamless",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gfs_seamless",
         "type": "source.credibility",
         "city": "seattle",
-        "window": "2026-W35..2026-W44:ba8e4d8b7de6",
+        "window": "2026-W35..2026-W44:0ad12f448187",
         "source": "gfs_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Seattle credibility for GFS (NOAA) is 18.02% from backfill inverse MAE.",
+        "sentence": "Seattle: trusting GFS (NOAA) 9% — closest in 3 of last 10 backfill weeks, MAE 5.6 mm.",
         "data": {
-          "weight": 0.1801979388709514,
-          "trainingHash": "ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c"
+          "source": "gfs_seamless",
+          "n": 10,
+          "mae": 5.62,
+          "hitRate": 0.9,
+          "wins": 3,
+          "residuals": [
+            9.5, 6.200000000000001, 7, 0.3, -14.4, -4.6000000000000005, 1.2000000000000002,
+            -0.30000000000000004, -2, 10.699999999999998
+          ],
+          "comparisonMae": 5.62,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.09358457469423503,
+          "trainingHash": "23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc"
         },
-        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:ba8e4d8b7de6] [gfs_seamless] [sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:gfs_seamless] Seattle credibility for GFS (NOAA) is 18.02% from backfill inverse MAE. | data={\"weight\":0.1801979388709514,\"trainingHash\":\"ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c\"}"
+        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:0ad12f448187] [gfs_seamless] [sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gfs_seamless] Seattle: trusting GFS (NOAA) 9% — closest in 3 of last 10 backfill weeks, MAE 5.6 mm. | data={\"source\":\"gfs_seamless\",\"n\":10,\"mae\":5.62,\"hitRate\":0.9,\"wins\":3,\"residuals\":[9.5,6.200000000000001,7,0.3,-14.4,-4.6000000000000005,1.2000000000000002,-0.30000000000000004,-2,10.699999999999998],\"comparisonMae\":5.62,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.09358457469423503,\"trainingHash\":\"23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc\"}"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:ecmwf_ifs025",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:ecmwf_ifs025",
         "type": "source.credibility",
         "city": "seattle",
-        "window": "2026-W35..2026-W44:ba8e4d8b7de6",
+        "window": "2026-W35..2026-W44:0ad12f448187",
         "source": "ecmwf_ifs025",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Seattle credibility for ECMWF IFS is 15.06% from backfill inverse MAE.",
+        "sentence": "Seattle: trusting ECMWF IFS 5% — closest in 2 of last 10 backfill weeks, MAE 6.9 mm.",
         "data": {
-          "weight": 0.15061999435930531,
-          "trainingHash": "ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c"
+          "source": "ecmwf_ifs025",
+          "n": 10,
+          "mae": 6.920000000000002,
+          "hitRate": 0.9333333333333333,
+          "wins": 2,
+          "residuals": [
+            -0.8000000000000007, -8.399999999999999, -9.3, -0.3, -13.299999999999999, -5,
+            -6.800000000000001, -1.4000000000000001, -2.2, -21.700000000000006
+          ],
+          "comparisonMae": 6.920000000000002,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.04885543198910121,
+          "trainingHash": "23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc"
         },
-        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:ba8e4d8b7de6] [ecmwf_ifs025] [sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:ecmwf_ifs025] Seattle credibility for ECMWF IFS is 15.06% from backfill inverse MAE. | data={\"weight\":0.15061999435930531,\"trainingHash\":\"ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c\"}"
+        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:0ad12f448187] [ecmwf_ifs025] [sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:ecmwf_ifs025] Seattle: trusting ECMWF IFS 5% — closest in 2 of last 10 backfill weeks, MAE 6.9 mm. | data={\"source\":\"ecmwf_ifs025\",\"n\":10,\"mae\":6.920000000000002,\"hitRate\":0.9333333333333333,\"wins\":2,\"residuals\":[-0.8000000000000007,-8.399999999999999,-9.3,-0.3,-13.299999999999999,-5,-6.800000000000001,-1.4000000000000001,-2.2,-21.700000000000006],\"comparisonMae\":6.920000000000002,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.04885543198910121,\"trainingHash\":\"23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc\"}"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:icon_seamless",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless",
         "type": "source.credibility",
         "city": "seattle",
-        "window": "2026-W35..2026-W44:ba8e4d8b7de6",
+        "window": "2026-W35..2026-W44:0ad12f448187",
         "source": "icon_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Seattle credibility for DWD ICON is 39.24% from backfill inverse MAE.",
+        "sentence": "Seattle: trusting DWD ICON 56% — closest in 5 of last 10 backfill weeks, MAE 2.0 mm.",
         "data": {
-          "weight": 0.3924047221466113,
-          "trainingHash": "ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c"
+          "source": "icon_seamless",
+          "n": 10,
+          "mae": 2.0399999999999996,
+          "hitRate": 0.9666666666666667,
+          "wins": 5,
+          "residuals": [
+            2.1999999999999993, -0.8999999999999986, 0.8999999999999986, -0.8999999999999999, -7.1,
+            -1.7, -1, -0.6000000000000001, -5, 0.09999999999999787
+          ],
+          "comparisonMae": 2.0399999999999996,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.5605203617178008,
+          "trainingHash": "23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc"
         },
-        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:ba8e4d8b7de6] [icon_seamless] [sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:icon_seamless] Seattle credibility for DWD ICON is 39.24% from backfill inverse MAE. | data={\"weight\":0.3924047221466113,\"trainingHash\":\"ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c\"}"
+        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:0ad12f448187] [icon_seamless] [sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless] Seattle: trusting DWD ICON 56% — closest in 5 of last 10 backfill weeks, MAE 2.0 mm. | data={\"source\":\"icon_seamless\",\"n\":10,\"mae\":2.0399999999999996,\"hitRate\":0.9666666666666667,\"wins\":5,\"residuals\":[2.1999999999999993,-0.8999999999999986,0.8999999999999986,-0.8999999999999999,-7.1,-1.7,-1,-0.6000000000000001,-5,0.09999999999999787],\"comparisonMae\":2.0399999999999996,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.5605203617178008,\"trainingHash\":\"23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc\"}"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:gem_seamless",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gem_seamless",
         "type": "source.credibility",
         "city": "seattle",
-        "window": "2026-W35..2026-W44:ba8e4d8b7de6",
+        "window": "2026-W35..2026-W44:0ad12f448187",
         "source": "gem_seamless",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Seattle credibility for ECCC GEM is 27.68% from backfill inverse MAE.",
+        "sentence": "Seattle: trusting ECCC GEM 30% — closest in 2 of last 10 backfill weeks, MAE 3.3 mm.",
         "data": {
-          "weight": 0.27677734462313186,
-          "trainingHash": "ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c"
+          "source": "gem_seamless",
+          "n": 10,
+          "mae": 3.3099999999999996,
+          "hitRate": 0.9333333333333333,
+          "wins": 2,
+          "residuals": [
+            -6.300000000000001, 1.1000000000000014, 4.800000000000001, 0.3, 2.6999999999999993,
+            -2.2, 1.5, -1.1, -4.1, 8.999999999999996
+          ],
+          "comparisonMae": 3.3099999999999996,
+          "comparisonWeeks": [
+            "2026-W35",
+            "2026-W36",
+            "2026-W37",
+            "2026-W38",
+            "2026-W39",
+            "2026-W40",
+            "2026-W41",
+            "2026-W42",
+            "2026-W43",
+            "2026-W44"
+          ],
+          "weight": 0.29703963159886293,
+          "trainingHash": "23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc"
         },
-        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:ba8e4d8b7de6] [gem_seamless] [sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:gem_seamless] Seattle credibility for ECCC GEM is 27.68% from backfill inverse MAE. | data={\"weight\":0.27677734462313186,\"trainingHash\":\"ba8e4d8b7de6bf829bb8182b145905a3253ceff4cd6071b63d1c876205516f7c\"}"
+        "text": "[source.credibility] [seattle] [2026-W35..2026-W44:0ad12f448187] [gem_seamless] [sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gem_seamless] Seattle: trusting ECCC GEM 30% — closest in 2 of last 10 backfill weeks, MAE 3.3 mm. | data={\"source\":\"gem_seamless\",\"n\":10,\"mae\":3.3099999999999996,\"hitRate\":0.9333333333333333,\"wins\":2,\"residuals\":[-6.300000000000001,1.1000000000000014,4.800000000000001,0.3,2.6999999999999993,-2.2,1.5,-1.1,-4.1,8.999999999999996],\"comparisonMae\":3.3099999999999996,\"comparisonWeeks\":[\"2026-W35\",\"2026-W36\",\"2026-W37\",\"2026-W38\",\"2026-W39\",\"2026-W40\",\"2026-W41\",\"2026-W42\",\"2026-W43\",\"2026-W44\"],\"weight\":0.29703963159886293,\"trainingHash\":\"23bf1d9c53c7db969ec16b79a1887b7f0700830c99d376b8cb67204aade8c5cc\"}"
       },
       {
         "id": "sr:settlement.note:seattle:2026-W44:noaa",
@@ -1379,11 +2368,18 @@
         "window": "2026-W44",
         "source": "noaa",
         "namespace": "skyhedge-recall:forecaster",
-        "sentence": "Seattle backfill 2026-W44 is settled from complete NOAA daily observations.",
+        "sentence": "Backfill 2026-W44 Seattle: NOAA observed 25.1 mm; closest source DWD ICON (25.0 mm); GFS ran dry by 10.7 mm.",
         "data": {
-          "observed": 25.099999999999998
+          "observed": 25.099999999999998,
+          "forecasts": {
+            "gfs_seamless": 14.4,
+            "ecmwf_ifs025": 46.800000000000004,
+            "icon_seamless": 25,
+            "gem_seamless": 16.1
+          },
+          "closest": "icon_seamless"
         },
-        "text": "[settlement.note] [seattle] [2026-W44] [noaa] [sr:settlement.note:seattle:2026-W44:noaa] Seattle backfill 2026-W44 is settled from complete NOAA daily observations. | data={\"observed\":25.099999999999998}"
+        "text": "[settlement.note] [seattle] [2026-W44] [noaa] [sr:settlement.note:seattle:2026-W44:noaa] Backfill 2026-W44 Seattle: NOAA observed 25.1 mm; closest source DWD ICON (25.0 mm); GFS ran dry by 10.7 mm. | data={\"observed\":25.099999999999998,\"forecasts\":{\"gfs_seamless\":14.4,\"ecmwf_ifs025\":46.800000000000004,\"icon_seamless\":25,\"gem_seamless\":16.1},\"closest\":\"icon_seamless\"}"
       },
       {
         "id": "sr:profile.home_city:nyc:demo:profile",
@@ -1431,23 +2427,59 @@
         "status": "dry-run"
       },
       {
-        "id": "sr:source.score:nyc:2026-W35..2026-W44:e7666eb69734:icon_seamless",
+        "id": "sr:source.score:nyc:2026-W35..2026-W44:6891525cc570:icon_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:gfs_seamless",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:gfs_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:ecmwf_ifs025",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:ecmwf_ifs025",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:icon_seamless",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:icon_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:e7666eb69734:gem_seamless",
+        "id": "sr:source.credibility:nyc:2026-W35..2026-W44:6891525cc570:gem_seamless",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W35:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W36:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W37:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W38:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W39:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W40:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W41:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W42:noaa",
+        "status": "dry-run"
+      },
+      {
+        "id": "sr:settlement.note:nyc:2026-W43:noaa",
         "status": "dry-run"
       },
       {
@@ -1455,15 +2487,15 @@
         "status": "dry-run"
       },
       {
-        "id": "sr:pricing.adjustment:nyc:next:2026-11-09:2026-W35..2026-W44:e7666eb69734",
+        "id": "sr:pricing.adjustment:nyc:next:2026-11-09:2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a",
         "status": "dry-run"
       },
       {
-        "id": "sr:pick.logged:nyc:next:2026-11-09:2026-W35..2026-W44:e7666eb69734",
+        "id": "sr:pick.logged:nyc:next:2026-11-09:2026-W35..2026-W44:6891525cc570:forecast:65e2a511890a",
         "status": "dry-run"
       },
       {
-        "id": "sr:pick.scored:nyc:2026-W44:2026-W35..2026-W44:e7666eb69734",
+        "id": "sr:pick.scored:nyc:2026-W44:2026-W35..2026-W44:6891525cc570",
         "status": "dry-run"
       },
       {
@@ -1475,23 +2507,23 @@
         "status": "dry-run"
       },
       {
-        "id": "sr:source.score:chicago:2026-W35..2026-W44:bd66622892cd:gem_seamless",
+        "id": "sr:source.score:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:gfs_seamless",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gfs_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:ecmwf_ifs025",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:ecmwf_ifs025",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:icon_seamless",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:icon_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:bd66622892cd:gem_seamless",
+        "id": "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless",
         "status": "dry-run"
       },
       {
@@ -1507,23 +2539,23 @@
         "status": "dry-run"
       },
       {
-        "id": "sr:source.score:seattle:2026-W35..2026-W44:ba8e4d8b7de6:icon_seamless",
+        "id": "sr:source.score:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:gfs_seamless",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gfs_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:ecmwf_ifs025",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:ecmwf_ifs025",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:icon_seamless",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless",
         "status": "dry-run"
       },
       {
-        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:ba8e4d8b7de6:gem_seamless",
+        "id": "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gem_seamless",
         "status": "dry-run"
       },
       {

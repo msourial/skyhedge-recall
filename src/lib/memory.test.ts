@@ -5,7 +5,9 @@ import {
   parseMemory,
   profileNamespace,
   recalledWeights,
+  REMEMBER_WAIT_MS,
   recallRecords,
+  refreshingClient,
   rememberRecords,
   textHash,
   type Ledger,
@@ -91,7 +93,7 @@ describe('ledger', () => {
     await rememberRecords(client, [record], ledger, persist, false);
     expect(client.remember).toHaveBeenCalledTimes(1);
     expect(client.waitForRememberJob).toHaveBeenCalledWith('job', {
-      timeoutMs: 90000,
+      timeoutMs: REMEMBER_WAIT_MS,
       pollIntervalMs: 1500,
     });
   });
@@ -160,5 +162,64 @@ it('rejects conflicting duplicate credibility rather than depending on result or
   ).toBeNull();
   expect(recalledWeights([record, record], 'nyc', '2026-W44', ['gfs_seamless'], 'hash')).toEqual({
     gfs_seamless: 1,
+  });
+});
+
+describe('slow remember jobs', () => {
+  it('defers a timed-out job as pending and resumes it without resubmitting', async () => {
+    const client = mockClient();
+    const second = { ...record, id: `${record.id}:2`, text: `${record.text} 2` };
+    vi.mocked(client.waitForRememberJob)
+      .mockRejectedValueOnce(
+        new Error('remember job timed out after 1ms (job_id=job); last status: running'),
+      )
+      .mockResolvedValue({ id: 'job', blob_id: 'blob', namespace: 'ns', owner: 'owner' } as never);
+    const ledger: Ledger = {};
+    const persist = vi.fn().mockResolvedValue(undefined);
+    const first = await rememberRecords(client, [record, second], ledger, persist, false);
+    expect(first).toEqual([
+      { id: record.id, status: 'pending' },
+      { id: second.id, status: 'done' },
+    ]);
+    expect(ledger[record.id]).toMatchObject({ status: 'pending', job_id: 'job' });
+    await rememberRecords(client, [record, second], ledger, persist, false);
+    expect(ledger[record.id].status).toBe('done');
+    expect(client.remember).toHaveBeenCalledTimes(2);
+  });
+
+  it('still fails fast on non-timeout errors', async () => {
+    const client = mockClient();
+    vi.mocked(client.waitForRememberJob).mockRejectedValueOnce(new Error('job failed'));
+    await expect(
+      rememberRecords(client, [record], {}, vi.fn().mockResolvedValue(undefined), false),
+    ).rejects.toThrow('job failed');
+  });
+});
+
+describe('refreshingClient', () => {
+  it('rebuilds the client once after a relayer 401 and retries the call', async () => {
+    const stale = { ...mockClient(), destroy: vi.fn() };
+    vi.mocked(stale.recall).mockRejectedValue(new Error('401 from relayer: rejected'));
+    const fresh = { ...mockClient(), destroy: vi.fn() };
+    vi.mocked(fresh.recall).mockResolvedValue({ results: [], total: 0 } as never);
+    const factory = vi.fn().mockReturnValueOnce(stale).mockReturnValueOnce(fresh);
+    const client = refreshingClient(factory);
+    await expect(client.recall({ query: 'q' })).resolves.toEqual({ results: [], total: 0 });
+    expect(stale.destroy).toHaveBeenCalledOnce();
+    expect(factory).toHaveBeenCalledTimes(2);
+  });
+
+  it('rethrows a second 401 and non-auth errors without rebuilding', async () => {
+    const bad = () => {
+      const c = { ...mockClient(), destroy: vi.fn() };
+      vi.mocked(c.recall).mockRejectedValue(new Error('401 from relayer: rejected'));
+      return c;
+    };
+    await expect(refreshingClient(bad).recall({ query: 'q' })).rejects.toThrow('401');
+    const other = { ...mockClient(), destroy: vi.fn() };
+    vi.mocked(other.recall).mockRejectedValue(new Error('500 boom'));
+    const factory = vi.fn().mockReturnValue(other);
+    await expect(refreshingClient(factory).recall({ query: 'q' })).rejects.toThrow('500');
+    expect(factory).toHaveBeenCalledOnce();
   });
 });

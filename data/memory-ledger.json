@@ -1,1 +1,230 @@
-{}
+{
+  "sr:observed.total:nyc:2026-W44:noaa": {
+    "textHash": "e7d4927abcd95e049753127e21575d343fc586ca7c55b8690a1fc1c366d5b003",
+    "status": "done",
+    "job_id": "8f74726b-188c-46ed-9c54-cc7d48e8ee69",
+    "blob_id": "FItMK3FxcBOsf8XyYo19VJj4VtBCeFIX8XrNm9aGPu8"
+  },
+  "sr:source.forecast:nyc:2026-W44:icon_seamless": {
+    "textHash": "1089bd4cda964b14269ca2d3cf477294f54d78d439696cbdb2f03a9a298d433e",
+    "status": "done",
+    "job_id": "582d3ee9-9e24-463a-933c-f213f338b076",
+    "blob_id": "piVus3t_3psKEOzejyV9su93_P3XlS8ZdsFcFhnwsoU"
+  },
+  "sr:source.score:nyc:2026-W35..2026-W44:a43c7be0e4f1:icon_seamless": {
+    "textHash": "2d5d3d9b2f863592aef39d85937c9af1d402f5b87316c4c2e67629b50698db48",
+    "status": "done",
+    "job_id": "37783f18-74f0-47d6-a3ea-72f1b3badc5c",
+    "blob_id": "x9yuBGu9jMVqx7Jy3116A_PW4JsEN5B4CctK8eJ48VM"
+  },
+  "sr:source.credibility:nyc:2026-W35..2026-W44:a43c7be0e4f1:gfs_seamless": {
+    "textHash": "fa89dfd39ab8cd09b1887c8dbf0a943d338807fd6ed435eb95807e7d33760015",
+    "status": "done",
+    "job_id": "ddfffb25-245f-463e-959e-c8ba1880707c",
+    "blob_id": "0dD582yWOWDryXbRFp7c-PbetqpBpESOkLKHDL1buFU"
+  },
+  "sr:source.credibility:nyc:2026-W35..2026-W44:a43c7be0e4f1:icon_seamless": {
+    "textHash": "d245a887b78334f00fe4dd221b608968dd9e8f93d1378d2d971c32bfa1935d79",
+    "status": "done",
+    "job_id": "fefec164-bc4d-44ad-95cf-c6f11fe313ed",
+    "blob_id": "y83sMTPz8cHoomedrJ2XZ3NLwakmoHOoyftIva0ooII"
+  },
+  "sr:source.credibility:nyc:2026-W35..2026-W44:a43c7be0e4f1:gem_seamless": {
+    "textHash": "939fe0cac8c878019ceaa5001d3d196df706051968ee942a30168d20fffc0af3",
+    "status": "done",
+    "job_id": "1fd6af50-d89f-4cab-9bc9-c42137879c4f",
+    "blob_id": "DBpeDDZCQ3BFJidQWD3HaMrdoJzfvthH_9wekVC0HnM"
+  },
+  "sr:settlement.note:nyc:2026-W35:noaa": {
+    "textHash": "aaec27a38531aee4e94e98b6ee7e3e50f680d6f79a6353383c229c2fe4dc813a",
+    "status": "done",
+    "job_id": "c06bc960-c77f-47ff-842a-c0eaf876b0a1",
+    "blob_id": "yxICeBF5hq8qKEivAQfvk1f9T64jQ6iZU9kS2sVWzuE"
+  },
+  "sr:settlement.note:nyc:2026-W36:noaa": {
+    "textHash": "b863dbf34b99b76006b1bd15a067074447edc3bffb36df101003ba0e79f020d6",
+    "status": "done",
+    "job_id": "8c2a6e51-4c64-46ed-8b55-c3ebff258ae1",
+    "blob_id": "JLWxCLONBd2gk_6z1-GkgjPbgSVQQue-knRJlBVFiCE"
+  },
+  "sr:settlement.note:nyc:2026-W37:noaa": {
+    "textHash": "97b51db6125bca7735230bac0586269817a2cbcd320d21ea17931c6675d5394b",
+    "status": "done",
+    "job_id": "5635a160-044d-4185-89cf-41bcb6d05970",
+    "blob_id": "ZBdvOTRoUonyYP1b0YZ7D_87ZYaDmWl3gfoeNi7C-GY"
+  },
+  "sr:settlement.note:nyc:2026-W38:noaa": {
+    "textHash": "e3e6854f756611a17941bdf8f83b1059984bb44a89b043043f14633407cded15",
+    "status": "done",
+    "job_id": "026aeec5-28f3-4e09-a7ba-ef7b62bf38dc",
+    "blob_id": "Je8YbdBGAiauc1Y9FGSDXC8RF7R0Wiknhfe9pPcpCEM"
+  },
+  "sr:settlement.note:nyc:2026-W39:noaa": {
+    "textHash": "8c2fbb763e89212df313f6343dc56b5eb70ef473a1112c959f7ea98b8ade8c41",
+    "status": "done",
+    "job_id": "721f8dbe-0c3f-4444-960d-b46761ef68ab",
+    "blob_id": "M7b6qfZOD-Afi9W9YHUfWWcSuh57z-P-yYAm1QIhp58"
+  },
+  "sr:settlement.note:nyc:2026-W40:noaa": {
+    "textHash": "1a2936788c152d392a51f0c340a1a2ff51aa3a5d6fc0eb135c7ef3f7d02a3fd8",
+    "status": "done",
+    "job_id": "f926b021-b61a-4250-b380-62947a18605f",
+    "blob_id": "ZIwwS2el2Zy1c-vHjwynV1JOuoqgp7lJmK3N93K_sac"
+  },
+  "sr:settlement.note:nyc:2026-W41:noaa": {
+    "textHash": "e2593fc70e3f33607608a261a32764046617bfbd4050b7165069d813c50eb9d4",
+    "status": "done",
+    "job_id": "13b7462a-2929-4619-b2c7-d6464fc82c76",
+    "blob_id": "1LnMLR9L9IaH_udJ_Tx-qL4cqYo-OplzgVi9fyd3MHk"
+  },
+  "sr:settlement.note:nyc:2026-W42:noaa": {
+    "textHash": "4047ebf4d2e6936c792bbb3177bb26cd4c8fd166bffa1cc714df511bef8a72aa",
+    "status": "done",
+    "job_id": "826843e4-a0a2-4d3a-9da4-379a08ef54e4",
+    "blob_id": "B0CZzyMcOCHdPAyeytlFEFHOxAaqr0Jz3YFqbGj4fIE"
+  },
+  "sr:settlement.note:nyc:2026-W43:noaa": {
+    "textHash": "43724e8816d2a2402969d35eed4b3f574e77573c415c83ee2621ab4d7ae68d96",
+    "status": "done",
+    "job_id": "7abe58a8-c2ae-49b0-bea3-380f0c87039a",
+    "blob_id": "fc6Bz3FavnMaEuWnbNoVQBApha6WJDLZGoiNdUsHLrc"
+  },
+  "sr:settlement.note:nyc:2026-W44:noaa": {
+    "textHash": "a1fc62bb139ad127b57987096fc8abce830e63cbb720d2fc0994765995428add",
+    "status": "done",
+    "job_id": "2260d0e3-cfbb-4290-9fb2-c7683f94c1af",
+    "blob_id": "MXpj2kDtHz7a9eT6b_6h4uOIhacf3CkR4kV4OnBQ85A"
+  },
+  "sr:pricing.adjustment:nyc:next:2026-11-09:2026-W35..2026-W44:a43c7be0e4f1:forecast:1a784f35cd2e": {
+    "textHash": "3c36009dcfb799adba90cd716a0672195a2a270bd3c46c60b2c8a9f070284742",
+    "status": "done",
+    "job_id": "ea928a9d-1d88-4141-938b-e3d6b4a44200",
+    "blob_id": "WR2G7IC4Q54Rh1vDI2UDhykUIJAJfaHrTB7ZoWtDDR0"
+  },
+  "sr:pick.logged:nyc:next:2026-11-09:2026-W35..2026-W44:a43c7be0e4f1:forecast:1a784f35cd2e": {
+    "textHash": "a738b14c3cd32a241d065ce3029b6c021a343f27c4869f2563f57e1b220095d2",
+    "status": "done",
+    "job_id": "613783f8-3989-4281-bf24-c92494453f6f",
+    "blob_id": "ioCT44S6XPrVm9ONAYJBlxKHZPvUo9hKFnCyqBr5XgY"
+  },
+  "sr:pick.scored:nyc:2026-W44:2026-W35..2026-W44:a43c7be0e4f1": {
+    "textHash": "be7d2c461ed44934983421106797ab79a4d516a8df6581dbe095d4b910900cf9",
+    "status": "done",
+    "job_id": "6958113f-007d-4cae-a927-597c75134aee",
+    "blob_id": "9PFjwRT9E-lkuKN_ZZDOrb_VwvaeeJuI0tGolChABl8"
+  },
+  "sr:observed.total:chicago:2026-W44:noaa": {
+    "textHash": "6789e5bf3551f657522621cb0528cd347730977432bc05188e45ecba01ed7183",
+    "status": "done",
+    "job_id": "bf735bb5-f07d-4761-8398-95842013d132",
+    "blob_id": "xpP_E3BAoiwxfXDlvOK9SKG1RR9NcgRa60tgTXsgvcg"
+  },
+  "sr:source.forecast:chicago:2026-W44:gem_seamless": {
+    "textHash": "bbb270707b83108c1edcccc8275cd778e33a2c9cdbdf283d05395f925fa5f8fa",
+    "status": "done",
+    "job_id": "4dff2000-0ebe-4e95-9e86-504d75a12767",
+    "blob_id": "eWM1FkOemoZi-qLaN4W7ptugrbCQV3J-w0Y-vDZQo38"
+  },
+  "sr:source.score:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless": {
+    "textHash": "6fd4762727de4bb9845f74f43acafce903959d1d704e51249dc92716b2ee03a7",
+    "status": "done",
+    "job_id": "827abd99-595e-4b2a-aab9-992fefd47a4a",
+    "blob_id": "ZgX-S5z-MWB2DU5OmiurZ8msbkuc6FPOW9jqw9qbJN0"
+  },
+  "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gfs_seamless": {
+    "textHash": "7d6cbb116654039e4ce44d63e777e5eabf3f7bd69f014e3f273d6581d97e06c2",
+    "status": "done",
+    "job_id": "642d3452-bb1c-4b55-8b7e-ff263b1cc809",
+    "blob_id": "xW6VZsKDvCuiAI0-ZTqlEg0nGls0DrJOnsV_bhDwdLA"
+  },
+  "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:ecmwf_ifs025": {
+    "textHash": "9b7d81b84e74af73b7551f71c7a9b0b9112804e2151be3266b1d242fb505aa82",
+    "status": "done",
+    "job_id": "f33216de-52a8-4045-b9b2-09ae39eaa133",
+    "blob_id": "UxGLA5wtKIv5tEuhRCslC7-3eAxPPM5L_vjxY5TUprw"
+  },
+  "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:icon_seamless": {
+    "textHash": "0b5c44d41358c7ae1c5bf825c5da656e1bb8bc403c22aa2bd58b123b92d863a6",
+    "status": "done",
+    "job_id": "b02da777-b3eb-46df-a0c7-a387657bac56",
+    "blob_id": "tKCyIh3hh0eMKD22fyBRiEj_V_I5cxm_gfh4jGL3B54"
+  },
+  "sr:source.credibility:chicago:2026-W35..2026-W44:d0d833f97936:gem_seamless": {
+    "textHash": "87f91fa47d1ef072e49f36fb89890fd5e941cfcf0789aa27e20f3c3d7b4535d6",
+    "status": "done",
+    "job_id": "258d2f8b-8ed9-4ba1-8322-6654fa394ca2",
+    "blob_id": "qdohrcN90rA5znbAaXtyW-nHLa6pHKSz5UakxIhR-PA"
+  },
+  "sr:settlement.note:chicago:2026-W44:noaa": {
+    "textHash": "300640679ed6526587a5132d09c3bd42130eac5fff3b7278e3cce619e92d2f19",
+    "status": "done",
+    "job_id": "c0a16f83-87bb-4327-9a93-327a2b7f2be2",
+    "blob_id": "BVrIsxCS3BkpoA_rmC30ouNGPBoPaPm_y7bjITBqknY"
+  },
+  "sr:observed.total:seattle:2026-W44:noaa": {
+    "textHash": "3cc04b7380f5fa6d7e4a9646f7644b066c8d263437443f5172d1dd822664b490",
+    "status": "done",
+    "job_id": "58531c50-7c2f-4e73-bf0b-e64d3e41c030",
+    "blob_id": "aFjPoYuak8SXi66qQtWuGkIXAFfKz_NQCFxRw7cOkBY"
+  },
+  "sr:source.forecast:seattle:2026-W44:icon_seamless": {
+    "textHash": "4e46aae033f3acbeab13fab48b7950401ea60a25b4a0228068a9af40a305bb4d",
+    "status": "done",
+    "job_id": "38dd4006-46c1-43a4-b201-e721b746554d",
+    "blob_id": "IXizRv8iRdc60qiDoemJjQ-XCkjMnlF3_cnqlBw1Vkw"
+  },
+  "sr:source.score:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless": {
+    "textHash": "134249593e7a79f4d93284794d2a3191d865da3851fcf9423a15b8808d792622",
+    "status": "done",
+    "job_id": "304553c6-56ef-41e1-b3c1-fbada1ed2d33",
+    "blob_id": "L0BazF43qUhZb8oXG3YoJM94whjKXUMh3UYrFAQCS6I"
+  },
+  "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gfs_seamless": {
+    "textHash": "cd4e02cda9e29f9aa934d2fbb555626bdc61a678244e1f7b7e997e0e2939b0e7",
+    "status": "done",
+    "job_id": "caedb7d1-032c-40a6-8c78-afb7d5b9e1d7",
+    "blob_id": "QG_rrKMK7UkANPs_dT92qEmKV1M5cuGDJbyQ9WLPMH8"
+  },
+  "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:ecmwf_ifs025": {
+    "textHash": "43fc2bf1cb52f6015354434974c37bf3b7f8b85b206be8d4ced84751ee7de96a",
+    "status": "done",
+    "job_id": "a9164abb-d7e6-4fdd-8d0e-bffdf59d8e7c",
+    "blob_id": "YbXWXE8Zbg9wUa72RSj5Ax6rk_RsW2rmm8h88Nuf44E"
+  },
+  "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:icon_seamless": {
+    "textHash": "af7fa4ce0da29629378e85ad9f4d5f1c96ae74772a88f74da3bed4fe24a6cdcd",
+    "status": "done",
+    "job_id": "a0375a7f-fe48-4e66-8e2a-4b32b7735c88",
+    "blob_id": "TrRE-PuJWvYlxEx8Y_EW3doQLzyljMO8BkJiK9foDw4"
+  },
+  "sr:source.credibility:seattle:2026-W35..2026-W44:0ad12f448187:gem_seamless": {
+    "textHash": "228479a6755b0ce692c3242406c3ce3c51b169eeee31800084b08f947186d6a8",
+    "status": "done",
+    "job_id": "ef2b21a7-406f-4adf-83cf-0e93232f4afc",
+    "blob_id": "Vfxygl7wlvuAp4HdsQBPAzbFL6D5rhYivRYbFDnPS80"
+  },
+  "sr:settlement.note:seattle:2026-W44:noaa": {
+    "textHash": "42c6c6ee55e9a1b4305c6290f8b69f29628d40e6bc286bc24c912ab5051c4707",
+    "status": "done",
+    "job_id": "c18198ce-12d3-435d-b2ba-6664ce1d3756",
+    "blob_id": "fqdUk1E7d3BGgJjrlTd9cxMBaiV2_kUkSxx9W1TTCRI"
+  },
+  "sr:profile.home_city:nyc:demo:profile": {
+    "textHash": "5f1f1a6dc04cf792ee05c0c16fac0cf3d05b1159e4dfe8a84def5c7e16c16a3a",
+    "status": "done",
+    "job_id": "e1352320-9323-45cc-bf9e-76fe3ed12b5c",
+    "blob_id": "jODw0PnNvlaFIb2Shq9Xy1-ZzTNHY9ZFlwYD_dqjYJQ"
+  },
+  "sr:profile.risk_appetite:nyc:demo:profile": {
+    "textHash": "7ec7f576162639dbdb0fcf86ed4cf3f7838eefaa770e7c2759bdf7a92527e7e5",
+    "status": "done",
+    "job_id": "67a15ae4-11cd-438a-8148-92c26d48eaab",
+    "blob_id": "S1spNm2AXJ9gXzqjoZE-y3hDPfwEvV_6EL-_qy2jqfw"
+  },
+  "sr:profile.plan:nyc:demo:profile": {
+    "textHash": "cf4d01252af4d3c115196ae3d8a464deea2d2139fac5889701a694e8a7383e70",
+    "status": "done",
+    "job_id": "71051aad-7549-4d46-83b5-58722d868b60",
+    "blob_id": "0EHrqQr_kCW3ffx8_VzawIlKv2u4iPh9CyPBRBQXx10"
+  }
+}

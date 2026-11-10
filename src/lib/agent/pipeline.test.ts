@@ -34,6 +34,7 @@ it('gives changed forward inputs distinct journal identities and keeps identical
 it('uses validated recalled credibility as the live numerical input', async () => {
   const snapshot = structuredClone(saved) as unknown as Snapshot;
   snapshot.cities = snapshot.cities.slice(0, 1);
+  snapshot.memories.recalled = [];
   const entry = snapshot.cities[0];
   const records = snapshot.memories.written
     .filter((memory) => memory.city === entry.city.id && memory.type === 'source.credibility')

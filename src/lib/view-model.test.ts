@@ -9,7 +9,9 @@ it('rounds illustrative units up and preserves missing estimates', () => {
   expect(fairPremium(null)).toBeNull();
 });
 it('uses demo preferences, respects explicit city and labels local evidence', () => {
-  const data = snapshot as unknown as Snapshot;
+  // Use a dry-run view of the fixture: no recalled memories, so evidence must be labelled local.
+  const data = structuredClone(snapshot) as unknown as Snapshot;
+  data.memories.recalled = [];
   expect(viewModel(data)?.city.city.id).toBe('nyc');
   expect(viewModel(data, 'seattle')?.city.city.id).toBe('seattle');
   expect(viewModel(data)?.rung).toBe(25);

@@ -98,6 +98,19 @@ npm run agent -- --allow-mainnet-writes
 
 This flag is required even with keys. `agent:dry` never writes remote memory; configured Tatum credentials can still capture read-only chain evidence. Agent errors omit failed cities and are included in the snapshot. The snapshot records real API URLs and timestamps. Refresh through the script rather than manually editing numeric results.
 
+## Live mainnet run (Nov 9, 2026)
+
+The committed `data/snapshot.json` and `data/memory-ledger.json` come from `npm run agent -- --allow-mainnet-writes`. The snapshot was generated at 2026-11-10T00:46:32Z (6:46 PM Chicago, Nov 9).
+
+- **Memories written:** 38 to Walrus Memory through the managed mainnet relayer: 33 in `skyhedge-recall:forecaster` and 5 in `skyhedge-recall:profile:demo`. They cover 11 types: 12 `settlement.note`, 11 `source.credibility`, 3 each of `observed.total`, `source.forecast` and `source.score`, and 1 each of `pricing.adjustment`, `pick.logged`, `pick.scored`, `profile.home_city`, `profile.risk_appetite` and `profile.plan`.
+- **Ledger:** all 38 entries are `done`, each with a relayer job ID and a Walrus blob ID.
+- **Recall:** `npm run recall` returned all 38 distinct memory IDs. All three cities use `recalled` credibility, and the demo profile was recalled.
+- **MemWal account:** [`0xe5e2b3bb…0488c`](https://suiscan.xyz/mainnet/object/0xe5e2b3bbe5a7233d3b1636fcf9180c4453dd4af6a7494a8022de90f138c0488c), type `0xe7c16fbe…d7f5::account::MemWalAccount`.
+- **Delegate key (`MEMWAL_AGENT_ID`):** `6eeb2ec08cf03de5210cd16a54de5f1c2d57472eae66a8e35d42833744a29100`, Sui address [`0x9bed1584…758c`](https://suiscan.xyz/mainnet/account/0x9bed158448d10894e82a80ae90cd481f6f0acbefe603c1ff3d99e56e3f80758c). It is listed as `skyhedge_recall` in the account's `delegate_keys`, which Tatum read.
+- **Example blob (New York W44 observed total):** `FItMK3FxcBOsf8XyYo19VJj4VtBCeFIX8XrNm9aGPu8`. Fetch the Seal-encrypted ciphertext with `curl https://aggregator.walrus-mainnet.walrus.space/v1/blobs/FItMK3FxcBOsf8XyYo19VJj4VtBCeFIX8XrNm9aGPu8`.
+
+The relayer's server wallet pays for Walrus storage. The account's own transactions in the Tatum panel are its setup transactions (account and delegate-key registration); they are not the individual memory writes.
+
 ## Judge verification
 
 Run `npm run recall` to read city credibility and demo profile records. Inspect the [Walrus Memory dashboard](https://memory.walrus.xyz). Inspect the existing account at `https://suiscan.xyz/mainnet/object/<MEMWAL_ACCOUNT_ID>` and use the transaction links in the Tatum panel (`https://suiscan.xyz/mainnet/tx/<digest>`). Compare recalled tags, training hashes and weights against `data/snapshot.json` and the ledger. A dry-run snapshot is a proposed record list, not evidence of remote persistence.

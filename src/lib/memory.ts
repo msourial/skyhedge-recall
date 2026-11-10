@@ -1,4 +1,9 @@
-import { MemWal } from '@mysten-incubation/memwal';
+import {
+  MemWal,
+  MemWalRememberJobTimeoutError,
+  type RecallParams,
+  type RecallResult,
+} from '@mysten-incubation/memwal';
 import { createHash } from 'node:crypto';
 import { cities, sources, type Source } from './cities';
 import type { Weights } from './credibility';
@@ -146,20 +151,71 @@ export type Ledger = Record<
   { textHash: string; status: 'pending' | 'done'; job_id?: string; blob_id?: string }
 >;
 /** Minimal SDK interface for idempotent writing, polling and namespace-scoped recall. */
-export type MemoryClient = Pick<MemWal, 'remember' | 'waitForRememberJob' | 'recall'>;
+export type MemoryClient = Pick<MemWal, 'remember' | 'waitForRememberJob'> & {
+  /** Object-form recall only, so wrappers never drop positional limit/namespace arguments. */
+  recall(params: RecallParams): Promise<RecallResult>;
+};
+/** A memory client that can release its in-memory key copy. */
+export type ClosableMemoryClient = MemoryClient & { destroy(): void };
+
+/** True for the relayer's 401 auth rejection. */
+export function isAuthRejected(error: unknown): boolean {
+  return error instanceof Error && /^401\b|\b401 from relayer\b/.test(error.message);
+}
+
+/**
+ * Wrap a client factory so a relayer 401 rebuilds the client once and retries the call.
+ * The mainnet relayer rejected requests from a long-lived client after ~15 minutes while a
+ * freshly created client with the same credentials succeeded, so the session is renewed
+ * rather than failing the run. A second 401 is a real credential problem and is rethrown.
+ */
+export function refreshingClient(factory: () => ClosableMemoryClient): ClosableMemoryClient {
+  let current = factory();
+  async function call<T>(run: (client: MemoryClient) => Promise<T>): Promise<T> {
+    try {
+      return await run(current);
+    } catch (error) {
+      if (!isAuthRejected(error)) throw error;
+      current.destroy();
+      current = factory();
+      return run(current);
+    }
+  }
+  return {
+    remember: (...args) => call((c) => c.remember(...args)),
+    waitForRememberJob: (...args) => call((c) => c.waitForRememberJob(...args)),
+    recall: (params: RecallParams) => call((c) => c.recall(params)),
+    destroy: () => current.destroy(),
+  };
+}
+
 /** Create the authenticated server-side memory client or return null when required credentials are absent. */
 export function createMemoryClient(
   env: Record<string, string | undefined> = process.env,
-): MemWal | null {
-  return env.MEMWAL_PRIVATE_KEY && env.MEMWAL_ACCOUNT_ID
-    ? MemWal.create({
-        key: env.MEMWAL_PRIVATE_KEY,
-        accountId: env.MEMWAL_ACCOUNT_ID,
-        serverUrl: env.MEMWAL_SERVER_URL || 'https://relayer.memory.walrus.xyz',
-        namespace,
-      })
-    : null;
+): ClosableMemoryClient | null {
+  const key = env.MEMWAL_PRIVATE_KEY;
+  const accountId = env.MEMWAL_ACCOUNT_ID;
+  if (!key || !accountId) return null;
+  return refreshingClient(() =>
+    MemWal.create({
+      key,
+      accountId,
+      serverUrl: env.MEMWAL_SERVER_URL || 'https://relayer.memory.walrus.xyz',
+      namespace,
+    }),
+  );
 }
+/** Maximum time to wait for one accepted remember job before deferring it, in milliseconds. */
+export const REMEMBER_WAIT_MS = 180_000;
+
+/** True when the SDK gave up waiting on a job that is still running on the relayer. */
+export function isWaitTimeout(error: unknown): boolean {
+  return (
+    error instanceof MemWalRememberJobTimeoutError ||
+    (error instanceof Error && /timed out/i.test(error.message) && /job_id=/.test(error.message))
+  );
+}
+
 /** Persist and resume each accepted job independently; dry-run writes no remote memory. Poll delays are milliseconds. */
 export async function rememberRecords(
   client: MemoryClient | null,
@@ -196,10 +252,19 @@ export async function rememberRecords(
       entry.job_id = accepted.job_id;
       await persist(ledger);
     }
-    const done = await client.waitForRememberJob(entry.job_id, {
-      timeoutMs: 90000,
-      pollIntervalMs: 1500,
-    });
+    let done: Awaited<ReturnType<MemoryClient['waitForRememberJob']>>;
+    try {
+      done = await client.waitForRememberJob(entry.job_id, {
+        timeoutMs: REMEMBER_WAIT_MS,
+        pollIntervalMs: 1500,
+      });
+    } catch (error) {
+      // A slow job stays `pending` with its job_id in the ledger; the next run resumes waiting
+      // on the same job instead of resubmitting, so one slow write never blocks the others.
+      if (!isWaitTimeout(error)) throw error;
+      results.push({ id: record.id, status: 'pending' });
+      continue;
+    }
     entry.status = 'done';
     entry.blob_id = done.blob_id;
     await persist(ledger);

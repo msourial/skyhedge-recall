@@ -3,3 +3,4 @@ node_modules
 package-lock.json
 *.tsbuildinfo
 next-env.d.ts
+data/

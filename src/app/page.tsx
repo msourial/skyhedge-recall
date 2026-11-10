@@ -172,8 +172,13 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
     );
   const { city } = model;
   const gaugeMax = Math.max(50, model.blendedMm, ...Object.values(city.upcoming.forecasts));
+  const trustedName = city.explanations[0]?.match(/^Trusting (.+?) \d+%/)?.[1];
+  const punchline = trustedName
+    ? `Memory recalled ${trustedName} — that’s why this forecast moved.`
+    : 'Memory recalled the leading source — that’s why this forecast moved.';
   return (
     <main>
+      <p className="punchline">{punchline}</p>
       <header>
         <Link href="/" className="brand">
           SKYHEDGE <span>RECALL</span>
